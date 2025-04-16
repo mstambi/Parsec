@@ -1,0 +1,79 @@
+
+  /* Smooth Scrolling for the whole page */
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  } 
+
+
+  /* Adjust Section Padding for Better Visibility with Fixed Navbar */
+  section {
+    padding-top: 80px; /* Adjust this value based on your navbar height */
+  }
+
+  /* Body Reset */
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Ensuring Sections have Proper Spacing */
+  section h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  section p {
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+ 
+
+  /* About Section Styling */
+  #about {
+    background-color: #f8f8f8;
+  }
+
+
+
+  /* Hero Section Customization */
+  #home {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Services Section Enhancements */
+  #services .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  /* Contact Section Styling */
+  #contact {
+    background-color: #1d4ed8; /* Tailwind Primary Color */
+  }
+
+  /* Footer Styling */
+  footer {
+    background-color: #0f172a; /* Tailwind Dark Color */
+    color: #d1d5db; /* Tailwind Light Gray Color */
+  }
+
+  /* Adjusting Image Styles for Responsiveness */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Enhancing Button Styles */
+  .inline-block {
+    transition: background-color 0.3s ease;
+  }
+  
+  .inline-block:hover {
+    background-color: #e5e7eb; /* Light gray hover effect */
+  }
+
