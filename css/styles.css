@@ -1,79 +1,51 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
 
-  /* Smooth Scrolling for the whole page */
-  html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-  } 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
 
+/* Header scroll behavior */
+.hide-header {
+  transform: translateY(-100%);
+}
 
-  /* Adjust Section Padding for Better Visibility with Fixed Navbar */
-  section {
-    padding-top: 80px; /* Adjust this value based on your navbar height */
-  }
+.show-header {
+  transform: translateY(0);
+}
 
-  /* Body Reset */
-  body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: system-ui, sans-serif;
-    -webkit-font-smoothing: antialiased;
-  }
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-  /* Ensuring Sections have Proper Spacing */
-  section h2 {
-    margin-bottom: 1.5rem;
-  }
+/* About section */
+#about {
+  background-color: #f8f8f8;
+}
 
-  section p {
-    line-height: 1.6;
-    margin-bottom: 1.25rem;
-  }
- 
+/* Hero section */
+#home {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  /* About Section Styling */
-  #about {
-    background-color: #f8f8f8;
-  }
+/* Services overlay */
+#services .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
 
-
-
-  /* Hero Section Customization */
-  #home {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  /* Services Section Enhancements */
-  #services .overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-
-  /* Contact Section Styling */
-  #contact {
-    background-color: #1d4ed8; /* Tailwind Primary Color */
-  }
-
-  /* Footer Styling */
-  footer {
-    background-color: #0f172a; /* Tailwind Dark Color */
-    color: #d1d5db; /* Tailwind Light Gray Color */
-  }
-
-  /* Adjusting Image Styles for Responsiveness */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Enhancing Button Styles */
-  .inline-block {
-    transition: background-color 0.3s ease;
-  }
-  
-  .inline-block:hover {
-    background-color: #e5e7eb; /* Light gray hover effect */
-  }
-
+/* Footer */
+footer {
+  background-color: #0f172a;
+  color: #d1d5db;
+}

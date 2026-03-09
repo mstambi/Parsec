@@ -3,5 +3,4 @@ Disallow: /admin/
 Disallow: /login/
 Disallow: /private/
 
-Allow: /
-Sitemap: https://mstambi.github.io/Parsec/sitemap.xml
+Sitemap: https://www.parseclab.hr/sitemap.xml

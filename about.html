@@ -3,7 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Parsec Labs</title>
+  <title>Our Team - Parsec Lab</title>
+  <meta name="description" content="Meet the Parsec Lab engineering team - experts in datacenter MEP design, cooling systems, and campus infrastructure.">
+  <link rel="icon" type="image/svg+xml" href="images/parsecLogo_blackVector.svg">
+  <link rel="canonical" href="https://www.parseclab.hr/about">
+  <meta property="og:title" content="Our Team - Parsec Lab">
+  <meta property="og:description" content="Meet the Parsec Lab engineering team - experts in datacenter MEP design, cooling systems, and campus infrastructure.">
+  <meta property="og:url" content="https://www.parseclab.hr/about">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.parseclab.hr/images/parsecLogo_blackVector.svg">
+  <meta name="twitter:card" content="summary">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -11,37 +20,24 @@
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-          },
-          colors: {
-            primary: '#1d4ed8',
-            dark: '#0f172a',
-          },
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: { primary: '#1d4ed8', dark: '#0f172a' },
         },
       },
     };
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    .hide-header {
-      transform: translateY(-100%);
-    }
-    .show-header {
-      transform: translateY(0);
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="font-sans text-gray-800">
+<body class="font-sans text-gray-800 overflow-x-hidden">
 
 <!-- Navbar -->
 <header id="mainHeader" class="bg-white shadow-sm sticky top-0 z-50 transition-transform duration-300 show-header">
   <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
     <a href="index.html">
-      <img src="images/parsecLogo_blackVector.svg" alt="Parsec Labs Logo" class="h-10 w-auto" />
+      <img src="images/parsecLogo_blackVector.svg" alt="Parsec Lab Logo" class="h-10 w-auto" />
     </a>
     <nav>
       <ul class="hidden md:flex space-x-6 font-medium">
@@ -50,7 +46,6 @@
         <li><a href="contact.html" class="hover:text-primary">Contact</a></li>
       </ul>
     </nav>
-    <!-- Mobile Hamburger Menu -->
     <div class="md:hidden">
       <button id="hamburger" class="text-gray-800 focus:outline-none z-50 relative">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
@@ -61,10 +56,10 @@
   </div>
 </header>
 
-<!-- Mobile Menu OUTSIDE the navbar container -->
+<!-- Mobile Menu -->
 <div id="mobileMenu" class="fixed inset-0 w-full h-full bg-black/50 hidden z-40">
   <div class="bg-white w-3/4 p-4 space-y-6 absolute top-0 right-0 h-full overflow-y-auto">
-    <button id="closeMenu" class="text-gray-800 mb-4">X</button>
+    <button id="closeMenu" class="text-gray-800 mb-4 text-xl font-bold">&times;</button>
     <ul class="space-y-6">
       <li><a href="about.html" class="block hover:text-primary">Who We Are</a></li>
       <li><a href="services.html" class="block hover:text-primary">What We Do</a></li>
@@ -73,220 +68,271 @@
   </div>
 </div>
 
+<!-- Team Section -->
+<section class="py-20 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Meet Our Team</h2>
+    <p class="text-gray-600 text-lg mb-10 max-w-2xl mx-auto">Our multidisciplinary team brings together mechanical, electrical, controls, and architectural expertise to deliver complete datacenter and campus MEP solutions.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
 
+      <!-- Employee 1 - Crnogorac Mislav - Director -->
+      <div class="bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-duration="800">
+        <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-t-lg flex items-center justify-center cursor-pointer" onclick="openModal('emp1')">
+          <svg class="w-16 h-16 text-blue-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mt-4">Mislav Crnogorac</h3>
+        <p class="text-gray-600">Director</p>
+      </div>
 
+      <!-- Employee 2 - Uzelac Goran - Project Manager -->
+      <div class="bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">
+        <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-t-lg flex items-center justify-center cursor-pointer" onclick="openModal('emp2')">
+          <svg class="w-16 h-16 text-blue-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mt-4">Goran Uzelac</h3>
+        <p class="text-gray-600">Project Manager</p>
+      </div>
 
-  <section class="py-20 bg-gray-100">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">Meet Our Team</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Employee 1 -->
-        <div class="bg-white rounded-lg shadow-md p-4" data-aos="fade-up" data-aos-duration="1200">
-          <img src="images/about-photo.jpg" alt="Employee 1" class="w-full h-48 object-cover rounded-t-lg cursor-pointer" onclick="openModal('employee1')">
-          <h3 class="text-xl font-semibold mt-4">John Doe</h3>
-          <p class="text-gray-600">Senior Engineer</p>
+      <!-- Employee 3 - Kundija Dominik - BIM Manager -->
+      <div class="bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+        <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-t-lg flex items-center justify-center cursor-pointer" onclick="openModal('emp3')">
+          <svg class="w-16 h-16 text-blue-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
         </div>
-        
-        <!-- Employee 2 -->
-        <div class="bg-white rounded-lg shadow-md p-4" data-aos="fade-up" data-aos-duration="1200">
-          <img src="images/about-photo.jpg" alt="Employee 2" class="w-full h-48 object-cover rounded-t-lg cursor-pointer" onclick="openModal('employee2')">
-          <h3 class="text-xl font-semibold mt-4">Đejn Kovać</h3>
-          <p class="text-gray-600">Project Manager</p>
+        <h3 class="text-xl font-semibold mt-4">Dominik Kundija</h3>
+        <p class="text-gray-600">BIM Manager</p>
+      </div>
+
+      <!-- Employee 4 - Vukadin Hrvoje - Architect -->
+      <div class="bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+        <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-t-lg flex items-center justify-center cursor-pointer" onclick="openModal('emp4')">
+          <svg class="w-16 h-16 text-blue-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
         </div>
-  
-        <!-- Employee 3 -->
-        <div class="bg-white rounded-lg shadow-md p-4" data-aos="fade-up" data-aos-duration="1200">
-          <img src="images/about-photo.jpg" alt="Employee 3" class="w-full h-48 object-cover rounded-t-lg cursor-pointer" onclick="openModal('employee3')">
-          <h3 class="text-xl font-semibold mt-4">Alice Johnson</h3>
-          <p class="text-gray-600">Software Architect</p>
+        <h3 class="text-xl font-semibold mt-4">Hrvoje Vukadin</h3>
+        <p class="text-gray-600">Architect</p>
+      </div>
+
+      <!-- Employee 5 - Štambuk Matej - Controls Engineer -->
+      <div class="bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+        <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-t-lg flex items-center justify-center cursor-pointer" onclick="openModal('emp5')">
+          <svg class="w-16 h-16 text-blue-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
         </div>
-        
-        <!-- Employee 4 -->
-        <div class="bg-white rounded-lg shadow-md p-4" data-aos="fade-up" data-aos-duration="1200">
-          <img src="images/about-photo.jpg" alt="Employee 4" class="w-full h-48 object-cover rounded-t-lg cursor-pointer" onclick="openModal('employee4')">
-          <h3 class="text-xl font-semibold mt-4">Alice Johnson</h3>
-          <p class="text-gray-600">Software Architect</p>
+        <h3 class="text-xl font-semibold mt-4">Matej Štambuk</h3>
+        <p class="text-gray-600">Controls Engineer</p>
+      </div>
+
+      <!-- Employee 6 - Zelić Sven - Controls Engineer -->
+      <div class="bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">
+        <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-t-lg flex items-center justify-center cursor-pointer" onclick="openModal('emp6')">
+          <svg class="w-16 h-16 text-blue-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
         </div>
-        
-        <!-- Employee 5 -->
-        <div class="bg-white rounded-lg shadow-md p-4" data-aos="fade-up" data-aos-duration="1200">
-          <img src="images/about-photo.jpg" alt="Employee 5" class="w-full h-48 object-cover rounded-t-lg cursor-pointer" onclick="openModal('employee5')">
-          <h3 class="text-xl font-semibold mt-4">Alice Johnson</h3>
-          <p class="text-gray-600">Software Architect</p>
+        <h3 class="text-xl font-semibold mt-4">Sven Zelić</h3>
+        <p class="text-gray-600">Controls Engineer</p>
+      </div>
+
+      <!-- Employee 7 - Dobrović Nikola - Mechanical Engineer -->
+      <div class="bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+        <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-t-lg flex items-center justify-center cursor-pointer" onclick="openModal('emp7')">
+          <svg class="w-16 h-16 text-blue-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
         </div>
-        
-        <!-- Employee 6 -->
-        <div class="bg-white rounded-lg shadow-md p-4" data-aos="fade-up" data-aos-duration="1200">
-          <img src="images/about-photo.jpg" alt="Employee 6" class="w-full h-48 object-cover rounded-t-lg cursor-pointer" onclick="openModal('employee6')">
-          <h3 class="text-xl font-semibold mt-4">Alice Johnson</h3>
-          <p class="text-gray-600">Software Architect</p>
+        <h3 class="text-xl font-semibold mt-4">Nikola Dobrović</h3>
+        <p class="text-gray-600">Mechanical Engineer</p>
+      </div>
+
+      <!-- Employee 8 - Meter Zvonimir - Mechanical Engineer -->
+      <div class="bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">
+        <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-t-lg flex items-center justify-center cursor-pointer" onclick="openModal('emp8')">
+          <svg class="w-16 h-16 text-blue-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
         </div>
-        
-        <!-- Employee 7 -->
-        <div class="bg-white rounded-lg shadow-md p-4" data-aos="fade-up" data-aos-duration="1200">
-          <img src="images/about-photo.jpg" alt="Employee 7" class="w-full h-48 object-cover rounded-t-lg cursor-pointer" onclick="openModal('employee7')">
-          <h3 class="text-xl font-semibold mt-4">Alice Johnson</h3>
-          <p class="text-gray-600">Software Architect</p>
+        <h3 class="text-xl font-semibold mt-4">Zvonimir Meter</h3>
+        <p class="text-gray-600">Mechanical Engineer</p>
+      </div>
+
+      <!-- Employee 9 - Švigir Dominik - Mechanical Engineer -->
+      <div class="bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+        <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-t-lg flex items-center justify-center cursor-pointer" onclick="openModal('emp9')">
+          <svg class="w-16 h-16 text-blue-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
         </div>
-        
-        <!-- Employee 8 -->
-        <div class="bg-white rounded-lg shadow-md p-4" data-aos="fade-up" data-aos-duration="1200">
-          <img src="images/about-photo.jpg" alt="Employee 8" class="w-full h-48 object-cover rounded-t-lg cursor-pointer" onclick="openModal('employee8')">
-          <h3 class="text-xl font-semibold mt-4">Alice Johnson</h3>
-          <p class="text-gray-600">Software Architect</p>
+        <h3 class="text-xl font-semibold mt-4">Dominik Švigir</h3>
+        <p class="text-gray-600">Mechanical Engineer</p>
+      </div>
+
+      <!-- Employee 10 - Mišković Darko - Mechanical Engineer -->
+      <div class="bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">
+        <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-t-lg flex items-center justify-center cursor-pointer" onclick="openModal('emp10')">
+          <svg class="w-16 h-16 text-blue-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
         </div>
-        
-        <!-- Employee 9 -->
-        <div class="bg-white rounded-lg shadow-md p-4" data-aos="fade-up" data-aos-duration="1200">
-          <img src="images/about-photo.jpg" alt="Employee 9" class="w-full h-48 object-cover rounded-t-lg cursor-pointer" onclick="openModal('employee9')">
-          <h3 class="text-xl font-semibold mt-4">Alice Johnson</h3>
-          <p class="text-gray-600">Software Architect</p>
+        <h3 class="text-xl font-semibold mt-4">Darko Mišković</h3>
+        <p class="text-gray-600">Mechanical Engineer</p>
+      </div>
+
+      <!-- Employee 11 - Miklečić Ivan - Electrical Engineer -->
+      <div class="bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+        <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-t-lg flex items-center justify-center cursor-pointer" onclick="openModal('emp11')">
+          <svg class="w-16 h-16 text-blue-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
         </div>
-        
-        <!-- Employee 10 -->
-        <div class="bg-white rounded-lg shadow-md p-4" data-aos="fade-up" data-aos-duration="1200">
-          <img src="images/about-photo.jpg" alt="Employee 10" class="w-full h-48 object-cover rounded-t-lg cursor-pointer" onclick="openModal('employee10')">
-          <h3 class="text-xl font-semibold mt-4">Alice Johnson</h3>
-          <p class="text-gray-600">Software Architect</p>
+        <h3 class="text-xl font-semibold mt-4">Ivan Miklečić</h3>
+        <p class="text-gray-600">Electrical Engineer</p>
+      </div>
+
+      <!-- Employee 12 - Peras Tomislav - Electrical Engineer -->
+      <div class="bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-duration="800" data-aos-delay="550">
+        <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-t-lg flex items-center justify-center cursor-pointer" onclick="openModal('emp12')">
+          <svg class="w-16 h-16 text-blue-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
         </div>
+        <h3 class="text-xl font-semibold mt-4">Tomislav Peras</h3>
+        <p class="text-gray-600">Electrical Engineer</p>
+      </div>
+
+      <!-- Employee 13 - Abramović Karlo - Electrical Engineer -->
+      <div class="bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+        <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-t-lg flex items-center justify-center cursor-pointer" onclick="openModal('emp13')">
+          <svg class="w-16 h-16 text-blue-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mt-4">Karlo Abramović</h3>
+        <p class="text-gray-600">Electrical Engineer</p>
+      </div>
+
+      <!-- Employee 14 - Gužvinec Antonio - Electrical Engineer -->
+      <div class="bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-duration="800" data-aos-delay="650">
+        <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-t-lg flex items-center justify-center cursor-pointer" onclick="openModal('emp14')">
+          <svg class="w-16 h-16 text-blue-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mt-4">Antonio Gužvinec</h3>
+        <p class="text-gray-600">Electrical Engineer</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Employee Modal -->
+  <div id="employeeModal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50 p-4">
+    <div class="bg-white p-6 rounded-lg shadow-md max-w-4xl w-full relative max-h-[90vh] overflow-y-auto">
+      <button class="absolute top-4 right-4 text-2xl font-bold text-gray-500 hover:text-gray-800" onclick="closeModal()">&times;</button>
+      <div id="employeeModalContent" class="flex flex-col md:flex-row w-full gap-6">
+        <!-- Dynamic content -->
       </div>
     </div>
-  
-    <!-- Popup Modal -->
-    <div id="employeeModal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50">
-      <div class="bg-white p-6 rounded-lg shadow-md max-w-4xl w-full flex">
-        <button class="absolute top-0 right-0 p-2 text-xl font-semibold" onclick="closeModal()">X</button>
-        <div id="employeeModalContent" class="flex w-full">
-          <!-- Dynamic content will be inserted here -->
+  </div>
+</section>
+
+<script>
+  const employees = {
+    'emp1': {
+      name: 'Mislav Crnogorac',
+      title: 'Director',
+      bio: 'Mislav leads Parsec Lab with a strategic vision for growth in the datacenter and campus MEP engineering sector. He oversees company operations, client relationships, and long-term business development, ensuring Parsec Lab remains at the forefront of innovative infrastructure design and cooling equipment production.'
+    },
+    'emp2': {
+      name: 'Goran Uzelac',
+      title: 'Project Manager',
+      bio: 'Goran manages complex datacenter and MEP projects from inception to commissioning. He coordinates multidisciplinary teams, maintains schedules, and ensures every deliverable meets the highest standards of quality and compliance across international projects.'
+    },
+    'emp3': {
+      name: 'Dominik Kundija',
+      title: 'BIM Manager',
+      bio: 'Dominik leads all Building Information Modeling workflows at Parsec Lab. He ensures clash-free coordination across mechanical, electrical, and architectural disciplines, driving efficient construction processes and maintaining digital twin accuracy throughout the project lifecycle.'
+    },
+    'emp4': {
+      name: 'Hrvoje Vukadin',
+      title: 'Architect',
+      bio: 'Hrvoje handles the architectural design of datacenter facilities and campus buildings. He focuses on space planning, building envelope design, and regulatory compliance, ensuring every facility is optimized for both operational efficiency and occupant comfort.'
+    },
+    'emp5': {
+      name: 'Matej Štambuk',
+      title: 'Controls Engineer',
+      bio: 'Matej designs and implements building automation and controls systems for datacenter environments. He specializes in BMS/DCIM integration, PLC programming, and real-time monitoring solutions that provide operators with full visibility into facility performance.'
+    },
+    'emp6': {
+      name: 'Sven Zelić',
+      title: 'Controls Engineer',
+      bio: 'Sven focuses on instrumentation, control system architecture, and commissioning for critical infrastructure. He develops automated sequences for cooling and power systems, ensuring reliable hands-free operation and rapid fault response across facility systems.'
+    },
+    'emp7': {
+      name: 'Nikola Dobrović',
+      title: 'Mechanical Engineer',
+      bio: 'Nikola specializes in HVAC and cooling system design for high-density datacenter environments. He engineers precision cooling solutions including chilled water systems, direct liquid cooling, and innovative heat rejection equipment tailored to each facility.'
+    },
+    'emp8': {
+      name: 'Zvonimir Meter',
+      title: 'Mechanical Engineer',
+      bio: 'Zvonimir works on mechanical systems design for both datacenter and campus MEP projects. His expertise covers piping design, thermal load calculations, and energy recovery systems that help clients achieve optimal efficiency and sustainability targets.'
+    },
+    'emp9': {
+      name: 'Dominik Švigir',
+      title: 'Mechanical Engineer',
+      bio: 'Dominik focuses on innovative cooling equipment design and production. He contributes to the development of custom cooling units and heat exchangers, bridging the gap between engineering design and manufacturing to deliver purpose-built solutions for demanding compute environments.'
+    },
+    'emp10': {
+      name: 'Darko Mišković',
+      title: 'Mechanical Engineer',
+      bio: 'Darko brings expertise in plumbing, fire protection, and mechanical infrastructure for mission-critical facilities. He designs redundant piping systems, fire suppression layouts, and supports commissioning efforts to ensure all mechanical systems perform to specification.'
+    },
+    'emp11': {
+      name: 'Ivan Miklečić',
+      title: 'Electrical Engineer',
+      bio: 'Ivan designs power distribution systems for datacenter facilities, including medium-voltage switchgear, transformer sizing, and generator paralleling. He ensures reliable, redundant power delivery across Tier II through Tier IV installations.'
+    },
+    'emp12': {
+      name: 'Tomislav Peras',
+      title: 'Electrical Engineer',
+      bio: 'Tomislav focuses on UPS system design, battery energy storage integration, and power quality analysis. He models electrical load scenarios to optimize system sizing and ensure continuous power availability for critical IT loads.'
+    },
+    'emp13': {
+      name: 'Karlo Abramović',
+      title: 'Electrical Engineer',
+      bio: 'Karlo handles low-voltage distribution, lighting, and grounding system design for datacenter and campus projects. He works on busway routing, PDU specifications, and ensures all electrical installations comply with local and international standards.'
+    },
+    'emp14': {
+      name: 'Antonio Gužvinec',
+      title: 'Electrical Engineer',
+      bio: 'Antonio specializes in electrical protection coordination, arc flash analysis, and renewable energy integration for datacenter campuses. He contributes to sustainable power strategies that reduce operational costs while maintaining critical uptime requirements.'
+    }
+  };
+
+  function openModal(empId) {
+    const emp = employees[empId];
+    const content = document.getElementById('employeeModalContent');
+    content.innerHTML = `
+      <div class="w-full md:w-1/3 flex-shrink-0">
+        <div class="w-full h-64 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-lg flex items-center justify-center">
+          <svg class="w-24 h-24 text-blue-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
         </div>
       </div>
-    </div>
-  </section>
-  
-  <script>
-    // Function to open the modal and display employee details
-    function openModal(employeeId) {
-      const modal = document.getElementById('employeeModal');
-      const content = document.getElementById('employeeModalContent');
-  
-      // Define employee data
-      const employees = {
-        'employee1': {
-          name: 'John Doe',
-          profession: 'Senior Engineer',
-          resume: 'John has 10 years of experience in engineering and has worked on various high-profile projects. He has a strong background in system design and implementation, specializing in energy-efficient solutions and leading teams for large-scale projects. John is passionate about innovation and has contributed to several industry-leading patents. John has authored over 2000 words in engineering journals and is an expert in green technology implementation...',
-          photo: 'images/about-photo.jpg'
-        },
-        'employee2': {
-          name: 'Jane Smith',
-          profession: 'Project Manager',
-          resume: 'Jane leads large projects and manages teams to ensure timely delivery of client solutions. With over 15 years of experience, Jane excels in project planning, team coordination, and risk management. She has a proven track record of managing multi-million-dollar projects and building strong client relationships. In addition, Jane has worked with numerous global organizations to improve project efficiency and performance...',
-          photo: 'images/about-photo.jpg'
-        },
-        'employee3': {
-          name: 'Alice Johnson',
-          profession: 'Software Architect',
-          resume: 'Alice specializes in building scalable software systems and creating innovative solutions for complex problems. With a background in cloud computing, AI, and big data, Alice has designed systems that support millions of users globally. She is a leader in software engineering and has contributed to cutting-edge technologies in the industry. Alice is passionate about optimizing architectures and building distributed systems for large-scale applications...',
-          photo: 'images/about-photo.jpg'
-        },
-        
-        'employee4': {
-          name: 'Alice Johnson',
-          profession: 'Software Architect',
-          resume: 'Alice specializes in building scalable software systems and creating innovative solutions for complex problems. With a background in cloud computing, AI, and big data, Alice has designed systems that support millions of users globally. She is a leader in software engineering and has contributed to cutting-edge technologies in the industry. Alice is passionate about optimizing architectures and building distributed systems for large-scale applications...',
-          photo: 'images/about-photo.jpg'
-        },
-        
-        'employee5': {
-          name: 'Alice Johnson',
-          profession: 'Software Architect',
-          resume: 'Alice specializes in building scalable software systems and creating innovative solutions for complex problems. With a background in cloud computing, AI, and big data, Alice has designed systems that support millions of users globally. She is a leader in software engineering and has contributed to cutting-edge technologies in the industry. Alice is passionate about optimizing architectures and building distributed systems for large-scale applications...',
-          photo: 'images/about-photo.jpg'
-        },
-        'employee6': {
-          name: 'John Doe',
-          profession: 'Senior Engineer',
-          resume: 'John has 10 years of experience in engineering and has worked on various high-profile projects. He has a strong background in system design and implementation, specializing in energy-efficient solutions and leading teams for large-scale projects. John is passionate about innovation and has contributed to several industry-leading patents. John has authored over 2000 words in engineering journals and is an expert in green technology implementation...',
-          photo: 'images/about-photo.jpg'
-        },
-        'employee7': {
-          name: 'Jane Smith',
-          profession: 'Project Manager',
-          resume: 'Jane leads large projects and manages teams to ensure timely delivery of client solutions. With over 15 years of experience, Jane excels in project planning, team coordination, and risk management. She has a proven track record of managing multi-million-dollar projects and building strong client relationships. In addition, Jane has worked with numerous global organizations to improve project efficiency and performance...',
-          photo: 'images/about-photo.jpg'
-        },
-        'employee8': {
-          name: 'Alice Johnson',
-          profession: 'Software Architect',
-          resume: 'Alice specializes in building scalable software systems and creating innovative solutions for complex problems. With a background in cloud computing, AI, and big data, Alice has designed systems that support millions of users globally. She is a leader in software engineering and has contributed to cutting-edge technologies in the industry. Alice is passionate about optimizing architectures and building distributed systems for large-scale applications...',
-          photo: 'images/about-photo.jpg'
-        },
-        
-        'employee9': {
-          name: 'Alice Johnson',
-          profession: 'Software Architect',
-          resume: 'Alice specializes in building scalable software systems and creating innovative solutions for complex problems. With a background in cloud computing, AI, and big data, Alice has designed systems that support millions of users globally. She is a leader in software engineering and has contributed to cutting-edge technologies in the industry. Alice is passionate about optimizing architectures and building distributed systems for large-scale applications...',
-          photo: 'images/about-photo.jpg'
-        },
-        
-        'employee10': {
-          name: 'Alice Johnson',
-          profession: 'Software Architect',
-          resume: 'Alice specializes in building scalable software systems and creating innovative solutions for complex problems. With a background in cloud computing, AI, and big data, Alice has designed systems that support millions of users globally. She is a leader in software engineering and has contributed to cutting-edge technologies in the industry. Alice is passionate about optimizing architectures and building distributed systems for large-scale applications...',
-          photo: 'images/about-photo.jpg'
-        }
-      };
-  
-      // Populate modal with employee data
-      const employee = employees[employeeId];
-      content.innerHTML = `
-        <div class="w-1/3 pr-6">
-          <img src="${employee.photo}" alt="${employee.name}" class="w-full h-auto rounded-lg">
-        </div>
-        <div class="w-2/3 overflow-y-auto max-h-[80vh]">
-          <h3 class="text-2xl font-bold mb-4">${employee.name}</h3>
-          <p class="text-xl text-gray-700 mb-4">${employee.profession}</p>
-          <p class="text-gray-600">${employee.resume}</p>
-        </div>
-      `;
-  
-      // Show the modal and change background opacity
-      modal.classList.remove('hidden');
-      document.body.style.overflow = 'hidden';  // Disable scroll when modal is open
-    }
-  
-    // Function to close the modal
-    function closeModal() {
-      const modal = document.getElementById('employeeModal');
-      modal.classList.add('hidden');
-      document.body.style.overflow = '';  // Re-enable scroll when modal is closed
-    }
-  
-    // Close modal when clicking outside of the modal content
-    document.getElementById('employeeModal').addEventListener('click', function(event) {
-      if (event.target === this) {
-        closeModal();
-      }
-    });
-  </script>
-  
-  
+      <div class="w-full md:w-2/3">
+        <h3 class="text-2xl font-bold mb-2">${emp.name}</h3>
+        <p class="text-lg text-blue-600 font-medium mb-4">${emp.title}</p>
+        <p class="text-gray-600 leading-relaxed">${emp.bio}</p>
+      </div>
+    `;
+    document.getElementById('employeeModal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    document.getElementById('employeeModal').classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  document.getElementById('employeeModal').addEventListener('click', function(event) {
+    if (event.target === this) closeModal();
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeModal();
+  });
+</script>
 
 <!-- Connect With Our Team Section -->
 <section class="bg-gradient-to-b from-white to-gray-50 py-24 border-t border-gray-200" data-aos="fade-up">
   <div class="max-w-6xl mx-auto px-6 md:px-12">
     <div class="flex flex-col md:flex-row items-center justify-between gap-12">
-      
-      <!-- Text Content -->
       <div class="md:w-1/2">
         <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
           Connect With Our Team
         </h2>
         <p class="text-lg md:text-xl text-gray-600 mb-8">
-          Whether you’re building from the ground up or scaling across regions, our engineering team brings clarity, speed, and world-class experience to your data center project.
+          Whether you're planning a new datacenter campus, upgrading existing MEP systems, or looking for next-generation cooling solutions, our engineering team is ready to help.
         </p>
-
-        <!-- ✨ Fancy Custom Button -->
         <a href="contact.html" class="group inline-block relative text-white text-lg font-semibold transition duration-300 transform hover:scale-105">
           <span class="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-tl-[1.5rem] rounded-br-[1.5rem] rounded-tr-[0] rounded-bl-[0] transition-all duration-300 group-hover:from-blue-700 group-hover:to-indigo-700"></span>
           <span class="relative px-6 py-2 flex items-center gap-2 z-10">
@@ -296,126 +342,90 @@
             Get In Touch
           </span>
         </a>
-
       </div>
-
-      <!-- Right Side Visual -->
       <div class="md:w-1/2 flex justify-center">
-        <img src="images/parsecLogo_blackVector.svg" alt="Team Connect" class="max-w-md w-full">
+        <img src="images/parsecLogo_blackVector.svg" alt="Parsec Lab" class="max-w-md w-full">
       </div>
-
     </div>
   </div>
 </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-gray-400 py-8">
-    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between">
-      
-      <!-- Left Column -->
-      <div class="text-sm mb-6 md:mb-0 md:w-1/2">
-        <p class="mb-1 text-center md:text-left">
-          Parsec Lab engineers resilient, efficient, and scalable data center solutions
-        </p>
-        <p class="mb-1 text-center md:text-left">
-          designed to optimize energy use, performance, and uptime
-        </p>
-        <p class="mb-4 text-center md:text-left">
-          across modern digital infrastructure for global business continuity.
-        </p>
-        <div class="text-center md:text-left">
-          <a href="privacy.html" class="hover:text-primary">Privacy Notice</a> |
-          <a href="terms.html" class="hover:text-primary ml-1">Terms of Use</a> |
-          <a href="cookies.html" class="hover:text-primary ml-1">Cookie Policy</a>
-        </div>
+<!-- Footer -->
+<footer class="bg-dark text-gray-400 py-8">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between">
+    <div class="text-sm mb-6 md:mb-0 md:w-1/2">
+      <p class="mb-1 text-center md:text-left">Parsec Lab specializes in datacenter and campus MEP design,</p>
+      <p class="mb-1 text-center md:text-left">innovative cooling equipment engineering and production,</p>
+      <p class="mb-4 text-center md:text-left">delivering resilient, efficient infrastructure worldwide.</p>
+      <div class="text-center md:text-left">
+        <a href="privacy.html" class="hover:text-primary">Privacy Notice</a> |
+        <a href="terms.html" class="hover:text-primary ml-1">Terms of Use</a> |
+        <a href="cookies.html" class="hover:text-primary ml-1">Cookie Policy</a> |
+        <a href="impressum.html" class="hover:text-primary ml-1">Impressum</a>
       </div>
-  
-      <!-- Right Column -->
-      <div class="text-sm md:w-1/2 md:text-right text-center space-y-3">
-        <div class="flex items-center justify-center md:justify-end gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M2 4.5v15a1.5 1.5 0 001.5 1.5h17a1.5 1.5 0 001.5-1.5v-15A1.5 1.5 0 0020.5 3h-17A1.5 1.5 0 002 4.5zM4 6l8 5 8-5" /></svg>
-          <a href="mailto:info@parseclab.hr" class="hover:text-primary">info@parseclab.hr</a>
-        </div>
-        <div class="flex items-center justify-center md:justify-end gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2C8 2 5 5 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-4-3-7-7-7z" /></svg>
-          <a href="https://maps.app.goo.gl/ZEKaRFJjEMw4awVE6" target="_blank" class="hover:text-primary">ZICER, Zagreb, Croatia</a>
-        </div>
-        <div class="flex items-center justify-center md:justify-end gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M16 8a6 6 0 01-6 6H5v6h5a11 11 0 0011-11V5h-5z" /></svg>
-          <span>+385(0)91 1234 567</span>
-        </div>
-        <div class="flex items-center justify-center md:justify-end gap-2">
-          <img src="images/InBug-Black.png" alt="LinkedIn" class="h-4 w-4">
-          <a href="https://www.linkedin.com/feed/" target="_blank" class="hover:text-primary">LinkedIn</a>
-        </div>
+      <div class="mt-2 text-center md:text-left">
+        <a href="#" onclick="showCustomize(); return false;" class="hover:text-primary text-xs">Cookie Settings</a>
       </div>
-  
     </div>
-  </footer>
+    <div class="text-sm md:w-1/2 md:text-right text-center space-y-3">
+      <div class="flex items-center justify-center md:justify-end gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M2 4.5v15a1.5 1.5 0 001.5 1.5h17a1.5 1.5 0 001.5-1.5v-15A1.5 1.5 0 0020.5 3h-17A1.5 1.5 0 002 4.5zM4 6l8 5 8-5" /></svg>
+        <a href="mailto:info@parseclab.hr" class="hover:text-primary">info@parseclab.hr</a>
+      </div>
+      <div class="flex items-center justify-center md:justify-end gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2C8 2 5 5 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-4-3-7-7-7z" /></svg>
+        <a href="https://maps.app.goo.gl/ZEKaRFJjEMw4awVE6" target="_blank" class="hover:text-primary">ZICER, Zagreb, Croatia</a>
+      </div>
+      <div class="flex items-center justify-center md:justify-end gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+        <span>+385(0)91 1234 567</span>
+      </div>
+      <div class="flex items-center justify-center md:justify-end gap-2">
+        <img src="images/InBug-Black.png" alt="LinkedIn" class="h-4 w-4">
+        <a href="https://www.linkedin.com/feed/" target="_blank" class="hover:text-primary">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
-  <script>
-    AOS.init({ once: true, duration: 1000 });
+<script>
+  AOS.init({ once: true, duration: 1000 });
 
-    document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function () {
     const hamburger = document.getElementById('hamburger');
     const closeMenu = document.getElementById('closeMenu');
     const mobileMenu = document.getElementById('mobileMenu');
-    const menuPanel = mobileMenu.querySelector('div'); // the white panel
+    const menuPanel = mobileMenu.querySelector('div');
     const mobileLinks = mobileMenu.querySelectorAll('a');
 
-    // Show menu
-    hamburger.addEventListener('click', function () {
-      mobileMenu.classList.remove('hidden');
-    });
-
-    // Hide when clicking X
-    closeMenu.addEventListener('click', function () {
-      mobileMenu.classList.add('hidden');
-    });
-
-    // Hide when clicking any link
-    mobileLinks.forEach(link => {
-      link.addEventListener('click', function () {
-        mobileMenu.classList.add('hidden');
-      });
-    });
-
-    // Hide when clicking outside the menu (on the black background)
-    mobileMenu.addEventListener('click', function (e) {
-      if (!menuPanel.contains(e.target)) {
-        mobileMenu.classList.add('hidden');
-      }
-    });
+    hamburger.addEventListener('click', function () { mobileMenu.classList.remove('hidden'); });
+    closeMenu.addEventListener('click', function () { mobileMenu.classList.add('hidden'); });
+    mobileLinks.forEach(link => { link.addEventListener('click', function () { mobileMenu.classList.add('hidden'); }); });
+    mobileMenu.addEventListener('click', function (e) { if (!menuPanel.contains(e.target)) mobileMenu.classList.add('hidden'); });
   });
 
-    let lastScrollTop = 0;
-    const header = document.getElementById('mainHeader');
-
-    window.addEventListener('scroll', function () {
-      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-      if (scrollTop > lastScrollTop && scrollTop > 100) {
-        header.classList.remove('show-header');
-        header.classList.add('hide-header');
-      } else {
-        header.classList.remove('hide-header');
-        header.classList.add('show-header');
-      }
-
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-    });
-  </script>
+  let lastScrollTop = 0;
+  const header = document.getElementById('mainHeader');
+  window.addEventListener('scroll', function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop && scrollTop > 100) {
+      header.classList.remove('show-header');
+      header.classList.add('hide-header');
+    } else {
+      header.classList.remove('hide-header');
+      header.classList.add('show-header');
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
+</script>
 
 <!-- Cookie Banner -->
 <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-300 shadow-lg z-[9999] p-6 md:p-8 transition-opacity duration-300">
   <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
     <div class="w-full min-w-0 break-words">
-      <h3 class="text-lg font-semibold mb-2">We use cookies 🍪</h3>
-      <p class="text-sm text-gray-700">
-        We use cookies to enhance your experience, analyze site traffic, and serve targeted advertisements. 
-        Learn more in our <a href="privacy.html" class="text-blue-600 underline">Privacy Notice</a>.
-      </p>
-    </div>  
+      <h3 class="text-lg font-semibold mb-2">We use cookies</h3>
+      <p class="text-sm text-gray-700">We use cookies to enhance your experience, analyze site traffic, and serve targeted advertisements. Learn more in our <a href="privacy.html" class="text-blue-600 underline">Privacy Notice</a>.</p>
+    </div>
     <div class="flex gap-3 flex-nowrap flex-shrink-0">
       <button onclick="showCustomize()" class="px-4 py-2 text-sm font-medium text-gray-700 border border-gray-300 rounded hover:bg-gray-100">Customize</button>
       <button onclick="acceptCookies()" class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded hover:bg-blue-700">Accept All</button>
@@ -423,44 +433,15 @@
     </div>
   </div>
 </div>
-
-<!-- Customize Cookie Modal -->
 <div id="cookie-customize-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-[99999] flex items-center justify-center p-6">
   <div class="bg-white rounded-lg shadow-xl max-w-2xl w-full p-6 overflow-y-auto max-h-[90vh]">
     <h3 class="text-2xl font-bold mb-4">Customize Cookie Preferences</h3>
-    
     <form id="cookie-preferences-form" class="space-y-4">
-      <div>
-        <label class="flex items-center gap-3">
-          <input type="checkbox" disabled checked class="accent-blue-600" />
-          <span><strong>Essential</strong> – Always active for site functionality.</span>
-        </label>
-      </div>
-      <div>
-        <label class="flex items-center gap-3">
-          <input type="checkbox" id="performance" class="accent-blue-600" />
-          <span><strong>Performance</strong> – Helps us understand site usage via analytics.</span>
-        </label>
-      </div>
-      <div>
-        <label class="flex items-center gap-3">
-          <input type="checkbox" id="functional" class="accent-blue-600" />
-          <span><strong>Functional</strong> – Enables features like videos, maps, and chat.</span>
-        </label>
-      </div>
-      <div>
-        <label class="flex items-center gap-3">
-          <input type="checkbox" id="marketing" class="accent-blue-600" />
-          <span><strong>Marketing</strong> – For personalized ads and remarketing.</span>
-        </label>
-      </div>
-      <div>
-        <label class="flex items-center gap-3">
-          <input type="checkbox" id="preferences" class="accent-blue-600" />
-          <span><strong>Preferences</strong> – Saves your language, region, and theme.</span>
-        </label>
-      </div>
-      
+      <div><label class="flex items-center gap-3"><input type="checkbox" disabled checked class="accent-blue-600" /><span><strong>Essential</strong> &ndash; Always active for site functionality.</span></label></div>
+      <div><label class="flex items-center gap-3"><input type="checkbox" id="performance" class="accent-blue-600" /><span><strong>Performance</strong> &ndash; Helps us understand site usage via analytics.</span></label></div>
+      <div><label class="flex items-center gap-3"><input type="checkbox" id="functional" class="accent-blue-600" /><span><strong>Functional</strong> &ndash; Enables features like videos, maps, and chat.</span></label></div>
+      <div><label class="flex items-center gap-3"><input type="checkbox" id="marketing" class="accent-blue-600" /><span><strong>Marketing</strong> &ndash; For personalized ads and remarketing.</span></label></div>
+      <div><label class="flex items-center gap-3"><input type="checkbox" id="preferences" class="accent-blue-600" /><span><strong>Preferences</strong> &ndash; Saves your language, region, and theme.</span></label></div>
       <div class="flex justify-end mt-6 gap-3">
         <button type="button" onclick="hideCustomize()" class="px-4 py-2 text-sm border rounded text-gray-700 hover:bg-gray-100">Cancel</button>
         <button type="submit" class="px-4 py-2 text-sm bg-blue-600 text-white rounded hover:bg-blue-700">Save Preferences</button>
@@ -468,67 +449,14 @@
     </form>
   </div>
 </div>
-
 <script>
-  // Show/hide banner
-  window.addEventListener("DOMContentLoaded", () => {
-  const consent = localStorage.getItem("cookie-consent");
-  if (!consent) {
-    document.getElementById("cookie-banner").classList.remove("hidden");
-  } else {
-    document.getElementById("cookie-banner").remove(); // Just in case it's still in DOM
-  }
-});
-
-
-  function acceptCookies() {
-    localStorage.setItem("cookie-consent", JSON.stringify({
-      essential: true,
-      performance: true,
-      functional: true,
-      marketing: true,
-      preferences: true
-    }));
-    document.getElementById("cookie-banner").remove();
-    location.reload();
-  }
-
-  function rejectCookies() {
-    localStorage.setItem("cookie-consent", JSON.stringify({
-      essential: true,
-      performance: false,
-      functional: false,
-      marketing: false,
-      preferences: false
-    }));
-    document.getElementById("cookie-banner").remove();
-    location.reload();
-  }
-
-  function showCustomize() {
-    document.getElementById("cookie-customize-modal").classList.remove("hidden");
-  }
-
-  function hideCustomize() {
-    document.getElementById("cookie-customize-modal").classList.add("hidden");
-  }
-
-  document.getElementById("cookie-preferences-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-    const consent = {
-      essential: true,
-      performance: document.getElementById("performance").checked,
-      functional: document.getElementById("functional").checked,
-      marketing: document.getElementById("marketing").checked,
-      preferences: document.getElementById("preferences").checked
-    };
-    localStorage.setItem("cookie-consent", JSON.stringify(consent));
-    document.getElementById("cookie-banner").remove();
-    document.getElementById("cookie-customize-modal").classList.add("hidden");
-    location.reload();
-  });
+  window.addEventListener("DOMContentLoaded", () => { const consent = localStorage.getItem("cookie-consent"); if (consent) document.getElementById("cookie-banner").remove(); });
+  function acceptCookies() { localStorage.setItem("cookie-consent", JSON.stringify({ essential:true, performance:true, functional:true, marketing:true, preferences:true })); document.getElementById("cookie-banner").remove(); location.reload(); }
+  function rejectCookies() { localStorage.setItem("cookie-consent", JSON.stringify({ essential:true, performance:false, functional:false, marketing:false, preferences:false })); document.getElementById("cookie-banner").remove(); location.reload(); }
+  function showCustomize() { document.getElementById("cookie-customize-modal").classList.remove("hidden"); }
+  function hideCustomize() { document.getElementById("cookie-customize-modal").classList.add("hidden"); }
+  document.getElementById("cookie-preferences-form").addEventListener("submit", function(e) { e.preventDefault(); const consent = { essential:true, performance:document.getElementById("performance").checked, functional:document.getElementById("functional").checked, marketing:document.getElementById("marketing").checked, preferences:document.getElementById("preferences").checked }; localStorage.setItem("cookie-consent", JSON.stringify(consent)); document.getElementById("cookie-banner").remove(); document.getElementById("cookie-customize-modal").classList.add("hidden"); location.reload(); });
 </script>
 
 </body>
 </html>
-
