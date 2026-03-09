@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact - Parsec Lab</title>
@@ -107,7 +106,7 @@
   <div class="max-w-3xl mx-auto px-6">
     <div class="bg-white/80 backdrop-blur-md border border-gray-200 p-10 rounded-3xl shadow-2xl">
       <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Let's Talk</h2>
-      <form id="contactForm" onsubmit="return validateRecaptcha()" action="https://formspree.io/f/xjkyzkjo" method="POST" class="space-y-6">
+      <form id="contactForm" action="https://formspree.io/f/xjkyzkjo" method="POST" class="space-y-6">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <label for="name" class="block text-sm font-semibold text-gray-700">Name</label>
@@ -130,9 +129,6 @@
           <input type="checkbox" id="gdpr-consent" name="gdpr-consent" required class="mt-1 accent-blue-600" />
           <label for="gdpr-consent" class="text-sm text-gray-600">I agree to the processing of my personal data as described in the <a href="privacy.html" class="text-indigo-600 underline">Privacy Notice</a>. *</label>
         </div>
-        <div class="w-full flex justify-center">
-          <div class="g-recaptcha" data-sitekey="6LdqxxkrAAAAAFFz51-rst4_LplHY94TUIYe68ut"></div>
-        </div>
         <div class="text-center pt-4">
           <button type="submit" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-lg font-semibold rounded-tl-3xl rounded-br-3xl hover:from-blue-700 hover:to-indigo-700 transition-all shadow-lg transform hover:scale-105">
             Send Message
@@ -142,17 +138,6 @@
     </div>
   </div>
 </section>
-
-<script>
-  function validateRecaptcha() {
-    const response = grecaptcha.getResponse();
-    if (!response) {
-      alert("Please complete the CAPTCHA before submitting.");
-      return false;
-    }
-    return true;
-  }
-</script>
 
 <!-- Footer -->
 <footer class="bg-dark text-gray-400 py-8">
@@ -264,4 +249,5 @@
 
 </body>
 </html>
+
 
