@@ -27,25 +27,42 @@ img {
   height: auto;
 }
 
-/* About section */
-#about {
-  background-color: #f8f8f8;
-}
-
-/* Hero section */
-#home {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Services overlay */
-#services .overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
 /* Footer */
 footer {
   background-color: #0f172a;
   color: #d1d5db;
+}
+
+/* Counter animation */
+.stat-number {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card hover lift */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero parallax overlay */
+.hero-overlay {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.6) 100%);
+}
+
+/* Active nav link */
+.nav-active {
+  color: #06b6d4;
+  border-bottom: 2px solid #06b6d4;
+  padding-bottom: 2px;
 }

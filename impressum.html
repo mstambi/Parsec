@@ -4,266 +4,326 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Impressum - Parsec Lab</title>
-  <meta name="description" content="Company registration details for Parsec Lab d.o.o. - datacenter and campus MEP engineering.">
-  <link rel="icon" type="image/svg+xml" href="images/parsecLogo_blackVector.svg">
-  <link rel="canonical" href="https://www.parseclab.hr/impressum">
-  <meta property="og:title" content="Impressum - Parsec Lab">
-  <meta property="og:description" content="Company registration details for Parsec Lab d.o.o.">
-  <meta property="og:url" content="https://www.parseclab.hr/impressum">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://www.parseclab.hr/images/parsecLogo_blackVector.svg">
-  <meta name="twitter:card" content="summary">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="description" content="Impressum and legally required company registration details for Parsec Lab d.o.o. pursuant to Croatian law." />
+  <link rel="canonical" href="https://www.parseclab.hr/impressum" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Impressum - Parsec Lab" />
+  <meta property="og:description" content="Impressum and legally required company registration details for Parsec Lab d.o.o. pursuant to Croatian law." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.parseclab.hr/impressum" />
+  <meta property="og:image" content="https://www.parseclab.hr/images/parsec-og.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Impressum - Parsec Lab" />
+  <meta name="twitter:description" content="Impressum and legally required company registration details for Parsec Lab d.o.o. pursuant to Croatian law." />
+  <meta name="twitter:image" content="https://www.parseclab.hr/images/parsec-og.jpg" />
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: { sans: ['Inter', 'sans-serif'] },
-          colors: { primary: '#1d4ed8', dark: '#0f172a' },
-        },
-      },
-    };
+          colors: {
+            primary: '#0f172a',
+            accent: '#06b6d4',
+          }
+        }
+      }
+    }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body class="font-sans text-gray-800 overflow-x-hidden">
 
-<!-- Navbar -->
-<header id="mainHeader" class="bg-white shadow-sm sticky top-0 z-50 transition-transform duration-300 show-header">
-  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-    <a href="index.html">
-      <img src="images/parsecLogo_blackVector.svg" alt="Parsec Lab Logo" class="h-10 w-auto" />
-    </a>
-    <nav>
-      <ul class="hidden md:flex space-x-6 font-medium">
-        <li><a href="about.html" class="hover:text-primary">Who We Are</a></li>
-        <li><a href="services.html" class="hover:text-primary">What We Do</a></li>
-        <li><a href="contact.html" class="hover:text-primary">Contact</a></li>
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="font-['Inter'] text-gray-800 bg-white">
+
+  <!-- Header -->
+  <header id="mainHeader" class="bg-white shadow-sm sticky top-0 z-50 transition-transform duration-300 show-header">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <a href="index.html">
+        <img src="images/parsecLogo_blackVector.svg" alt="Parsec Lab Logo" class="h-10 w-auto" />
+      </a>
+      <nav>
+        <ul class="hidden md:flex space-x-6 font-medium">
+          <li><a href="about.html" class="hover:text-accent transition-colors">About</a></li>
+          <li><a href="services.html" class="hover:text-accent transition-colors">Services</a></li>
+          <li><a href="projects.html" class="hover:text-accent transition-colors">Projects</a></li>
+          <li><a href="technology.html" class="hover:text-accent transition-colors">Technology</a></li>
+          <li><a href="careers.html" class="hover:text-accent transition-colors">Careers</a></li>
+          <li><a href="contact.html" class="hover:text-accent transition-colors">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="md:hidden">
+        <button id="hamburger" class="text-gray-800 focus:outline-none z-50 relative">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="fixed inset-0 w-full h-full bg-black/50 hidden z-40">
+    <div class="bg-white w-3/4 p-4 space-y-6 absolute top-0 right-0 h-full overflow-y-auto">
+      <button id="closeMenu" class="text-gray-800 mb-4 text-xl font-bold">&times;</button>
+      <ul class="space-y-6">
+        <li><a href="about.html" class="block hover:text-accent transition-colors">About</a></li>
+        <li><a href="services.html" class="block hover:text-accent transition-colors">Services</a></li>
+        <li><a href="projects.html" class="block hover:text-accent transition-colors">Projects</a></li>
+        <li><a href="technology.html" class="block hover:text-accent transition-colors">Technology</a></li>
+        <li><a href="careers.html" class="block hover:text-accent transition-colors">Careers</a></li>
+        <li><a href="contact.html" class="block hover:text-accent transition-colors">Contact</a></li>
       </ul>
-    </nav>
-    <div class="md:hidden">
-      <button id="hamburger" class="text-gray-800 focus:outline-none z-50 relative">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
     </div>
   </div>
-</header>
-<div id="mobileMenu" class="fixed inset-0 w-full h-full bg-black/50 hidden z-40">
-  <div class="bg-white w-3/4 p-4 space-y-6 absolute top-0 right-0 h-full overflow-y-auto">
-    <button id="closeMenu" class="text-gray-800 mb-4 text-xl font-bold">&times;</button>
-    <ul class="space-y-6">
-      <li><a href="about.html" class="block hover:text-primary">Who We Are</a></li>
-      <li><a href="services.html" class="block hover:text-primary">What We Do</a></li>
-      <li><a href="contact.html" class="block hover:text-primary">Contact</a></li>
-    </ul>
-  </div>
-</div>
 
-<!-- Impressum / Company Information -->
-<section class="px-4 py-6 max-w-4xl mx-auto text-sm">
-  <div class="max-w-4xl mx-auto px-6 py-16">
-    <h1 class="text-4xl font-bold mb-6 text-center">Impressum / Company Information</h1>
-    <p class="text-gray-600 text-center mb-12">Legally required company registration details pursuant to Croatian law.</p>
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-6 py-16">
+    <h1 class="text-4xl md:text-5xl font-bold text-center mb-3 text-primary" data-aos="fade-up">Impressum / Company Information</h1>
+    <p class="text-center text-gray-500 mb-12" data-aos="fade-up" data-aos-delay="100">Legally required company registration details pursuant to Croatian law.</p>
 
-    <div class="space-y-10">
+    <div class="space-y-10" data-aos="fade-up" data-aos-delay="200">
 
       <!-- Company Name -->
-      <div>
-        <h2 class="text-2xl font-semibold mb-4">Tvrtka / Company Name</h2>
-        <p class="text-lg font-medium text-gray-900">Parsec Lab d.o.o. za inženjerstvo i tehničko savjetovanje</p>
-      </div>
+      <section class="text-center">
+        <h2 class="text-2xl font-semibold text-primary mb-2">Parsec Lab d.o.o. za inženjerstvo i tehničko savjetovanje</h2>
+      </section>
 
-      <!-- Registration Details -->
-      <div>
-        <h2 class="text-2xl font-semibold mb-4">Registracijski podaci / Registration Details</h2>
+      <!-- Registration Table -->
+      <section>
+        <h3 class="text-xl font-semibold text-primary mb-4">Company Registration Details</h3>
         <div class="overflow-x-auto">
-          <table class="w-full text-left border-collapse">
-            <tbody>
-              <tr class="border-b border-gray-200">
-                <td class="py-3 pr-6 font-medium text-gray-700 whitespace-nowrap w-1/3">MBS (Matični broj subjekta)</td>
-                <td class="py-3 text-gray-900">081625743</td>
+          <table class="w-full border border-gray-200 rounded-lg overflow-hidden">
+            <tbody class="divide-y divide-gray-200">
+              <tr class="bg-gray-50">
+                <td class="px-5 py-3 font-medium text-gray-700 w-1/3">MBS</td>
+                <td class="px-5 py-3 text-gray-800">081625743</td>
               </tr>
-              <tr class="border-b border-gray-200">
-                <td class="py-3 pr-6 font-medium text-gray-700 whitespace-nowrap">OIB (Osobni identifikacijski broj)</td>
-                <td class="py-3 text-gray-900">42803635305</td>
+              <tr>
+                <td class="px-5 py-3 font-medium text-gray-700">OIB</td>
+                <td class="px-5 py-3 text-gray-800">42803635305</td>
               </tr>
-              <tr class="border-b border-gray-200">
-                <td class="py-3 pr-6 font-medium text-gray-700 whitespace-nowrap">Datum osnivanja / Founded</td>
-                <td class="py-3 text-gray-900">27.12.2024.</td>
+              <tr class="bg-gray-50">
+                <td class="px-5 py-3 font-medium text-gray-700">Founded</td>
+                <td class="px-5 py-3 text-gray-800">27.12.2024.</td>
               </tr>
-              <tr class="border-b border-gray-200">
-                <td class="py-3 pr-6 font-medium text-gray-700 whitespace-nowrap">NKD (Djelatnost / Activity)</td>
-                <td class="py-3 text-gray-900">N71129 - Ostalo inženjerstvo i s njim povezano tehničko savjetovanje</td>
+              <tr>
+                <td class="px-5 py-3 font-medium text-gray-700">NKD</td>
+                <td class="px-5 py-3 text-gray-800">N71129 - Ostalo inženjerstvo i s njim povezano tehničko savjetovanje</td>
               </tr>
-              <tr class="border-b border-gray-200">
-                <td class="py-3 pr-6 font-medium text-gray-700 whitespace-nowrap">Trgovački sud / Court</td>
-                <td class="py-3 text-gray-900">Trgovački sud u Zagrebu</td>
+              <tr class="bg-gray-50">
+                <td class="px-5 py-3 font-medium text-gray-700">Court</td>
+                <td class="px-5 py-3 text-gray-800">Trgovački sud u Zagrebu</td>
               </tr>
-              <tr class="border-b border-gray-200">
-                <td class="py-3 pr-6 font-medium text-gray-700 whitespace-nowrap">MB DZS</td>
-                <td class="py-3 text-gray-900">06057098</td>
+              <tr>
+                <td class="px-5 py-3 font-medium text-gray-700">MB DZS</td>
+                <td class="px-5 py-3 text-gray-800">06057098</td>
               </tr>
-              <tr class="border-b border-gray-200">
-                <td class="py-3 pr-6 font-medium text-gray-700 whitespace-nowrap">Temeljni kapital / Share Capital</td>
-                <td class="py-3 text-gray-900">2.500,00 EUR</td>
+              <tr class="bg-gray-50">
+                <td class="px-5 py-3 font-medium text-gray-700">Share Capital</td>
+                <td class="px-5 py-3 text-gray-800">2.500,00 EUR</td>
               </tr>
             </tbody>
           </table>
         </div>
-      </div>
+      </section>
 
       <!-- Addresses -->
-      <div>
-        <h2 class="text-2xl font-semibold mb-4">Adrese / Addresses</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="bg-gray-50 rounded-lg p-6">
-            <h3 class="font-semibold text-gray-800 mb-2">Sjedište / Registered Address</h3>
-            <p class="text-gray-700">Trakošćanska ulica 6<br>10000 Zagreb<br>Hrvatska / Croatia</p>
+      <section>
+        <h3 class="text-xl font-semibold text-primary mb-4">Addresses</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+            <div class="flex items-center gap-2 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+              <h4 class="font-semibold text-primary">Registered Address</h4>
+            </div>
+            <p class="text-gray-700">Trakošćanska ulica 6</p>
+            <p class="text-gray-700">10000 Zagreb</p>
+            <p class="text-gray-700">Croatia</p>
           </div>
-          <div class="bg-gray-50 rounded-lg p-6">
-            <h3 class="font-semibold text-gray-800 mb-2">Ured / Office Address</h3>
-            <p class="text-gray-700">ZICER, Zagreb Innovation Centre<br>Avenija Dubrovnik 15<br>10000 Zagreb<br>Hrvatska / Croatia</p>
+          <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+            <div class="flex items-center gap-2 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+              <h4 class="font-semibold text-primary">Office Address</h4>
+            </div>
+            <p class="text-gray-700">ZICER, Zagreb Innovation Centre</p>
+            <p class="text-gray-700">Avenija Dubrovnik 15</p>
+            <p class="text-gray-700">10000 Zagreb, Croatia</p>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Director -->
-      <div>
-        <h2 class="text-2xl font-semibold mb-4">Direktor / Director</h2>
-        <p class="text-lg text-gray-900">Mislav Crnogorac</p>
-      </div>
+      <section>
+        <h3 class="text-xl font-semibold text-primary mb-4">Director</h3>
+        <div class="bg-gray-50 rounded-lg p-6 border border-gray-200 flex items-center gap-4">
+          <div class="bg-cyan-100 text-cyan-700 rounded-full h-12 w-12 flex items-center justify-center font-bold text-lg flex-shrink-0">MC</div>
+          <div>
+            <p class="font-semibold text-gray-800 text-lg">Mislav Crnogorac</p>
+            <p class="text-gray-500 text-sm">Director / Član uprave</p>
+          </div>
+        </div>
+      </section>
 
       <!-- Contact -->
-      <div>
-        <h2 class="text-2xl font-semibold mb-4">Kontakt / Contact</h2>
-        <div class="space-y-2">
-          <p class="text-gray-700">
-            <span class="font-medium">Email:</span>
-            <a href="mailto:info@parseclab.hr" class="text-indigo-600 hover:underline ml-1">info@parseclab.hr</a>
-          </p>
-          <p class="text-gray-700">
-            <span class="font-medium">Telefon / Phone:</span>
-            <span class="ml-1">+385(0)91 1234 567</span>
-          </p>
+      <section>
+        <h3 class="text-xl font-semibold text-primary mb-4">Contact</h3>
+        <div class="bg-gray-50 rounded-lg p-6 border border-gray-200 space-y-3">
+          <div class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+            <a href="mailto:info@parseclab.hr" class="text-cyan-600 underline hover:text-cyan-700">info@parseclab.hr</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+            <span class="text-gray-700">+385(0)91 1234 567</span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#0f172a] text-gray-400 border-t border-gray-700">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-3 gap-10">
+        <div>
+          <img src="images/parsecLogo_blackVector.svg" alt="Parsec Lab" class="h-8 mb-4 brightness-0 invert" />
+          <p class="text-sm leading-relaxed">Parsec Lab delivers complete data center engineering — from architecture and MEP design to controls integration and custom cooling equipment — across three continents.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About</a></li>
+            <li><a href="services.html" class="hover:text-cyan-400 transition-colors">Services</a></li>
+            <li><a href="projects.html" class="hover:text-cyan-400 transition-colors">Projects</a></li>
+            <li><a href="technology.html" class="hover:text-cyan-400 transition-colors">Technology</a></li>
+            <li><a href="careers.html" class="hover:text-cyan-400 transition-colors">Careers</a></li>
+            <li><a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contact</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-cyan-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+              <a href="mailto:info@parseclab.hr" class="hover:text-cyan-400 transition-colors">info@parseclab.hr</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-cyan-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+              <a href="https://maps.app.goo.gl/ZEKaRFJjEMw4awVE6" target="_blank" class="hover:text-cyan-400 transition-colors">ZICER, Zagreb, Croatia</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-cyan-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+              <span>+385(0)91 1234 567</span>
+            </li>
+          </ul>
         </div>
       </div>
+      <div class="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="text-xs text-gray-500 flex flex-wrap justify-center md:justify-start gap-3">
+          <a href="privacy.html" class="hover:text-cyan-400 transition-colors">Privacy Notice</a>
+          <span>|</span>
+          <a href="terms.html" class="hover:text-cyan-400 transition-colors">Terms of Use</a>
+          <span>|</span>
+          <a href="cookies.html" class="hover:text-cyan-400 transition-colors">Cookie Policy</a>
+          <span>|</span>
+          <a href="impressum.html" class="hover:text-cyan-400 transition-colors">Impressum</a>
+          <span>|</span>
+          <a href="#" onclick="showCustomize(); return false;" class="hover:text-cyan-400 transition-colors">Cookie Settings</a>
+        </div>
+        <p class="text-xs text-gray-500">&copy; 2025 Parsec Lab d.o.o. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
+  <!-- Scripts -->
+  <script>
+    AOS.init({ once: true, duration: 800 });
+    document.addEventListener("DOMContentLoaded", function () {
+      var hamburger = document.getElementById('hamburger');
+      var closeMenuBtn = document.getElementById('closeMenu');
+      var mobileMenu = document.getElementById('mobileMenu');
+      var menuPanel = mobileMenu.querySelector('div');
+      var mobileLinks = mobileMenu.querySelectorAll('a');
+      hamburger.addEventListener('click', function () { mobileMenu.classList.remove('hidden'); });
+      closeMenuBtn.addEventListener('click', function () { mobileMenu.classList.add('hidden'); });
+      mobileLinks.forEach(function(link) { link.addEventListener('click', function () { mobileMenu.classList.add('hidden'); }); });
+      mobileMenu.addEventListener('click', function (e) { if (!menuPanel.contains(e.target)) mobileMenu.classList.add('hidden'); });
+    });
+    var lastScrollTop = 0;
+    var header = document.getElementById('mainHeader');
+    window.addEventListener('scroll', function () {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop && scrollTop > 100) {
+        header.classList.remove('show-header');
+        header.classList.add('hide-header');
+      } else {
+        header.classList.remove('hide-header');
+        header.classList.add('show-header');
+      }
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+  </script>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-300 shadow-lg z-[9999] p-6 md:p-8 transition-opacity duration-300">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+      <div class="w-full min-w-0 break-words">
+        <h3 class="text-lg font-semibold mb-2">We use cookies</h3>
+        <p class="text-sm text-gray-700">We use cookies to enhance your experience, analyze site traffic, and serve targeted advertisements. Learn more in our <a href="privacy.html" class="text-cyan-600 underline">Privacy Notice</a>.</p>
+      </div>
+      <div class="flex gap-3 flex-nowrap flex-shrink-0">
+        <button onclick="showCustomize()" class="px-4 py-2 text-sm font-medium text-gray-700 border border-gray-300 rounded hover:bg-gray-100">Customize</button>
+        <button onclick="acceptCookies()" class="px-4 py-2 text-sm font-medium text-white bg-cyan-500 rounded hover:bg-cyan-600">Accept All</button>
+        <button onclick="rejectCookies()" class="px-4 py-2 text-sm font-medium text-gray-700 border border-gray-300 rounded hover:bg-gray-100">Reject All</button>
+      </div>
     </div>
   </div>
-</section>
 
-<!-- Footer -->
-<footer class="bg-dark text-gray-400 py-8">
-  <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between">
-    <div class="text-sm mb-6 md:mb-0 md:w-1/2">
-      <p class="mb-1 text-center md:text-left">Parsec Lab specializes in datacenter and campus MEP design,</p>
-      <p class="mb-1 text-center md:text-left">innovative cooling equipment engineering and production,</p>
-      <p class="mb-4 text-center md:text-left">delivering resilient, efficient infrastructure worldwide.</p>
-      <div class="text-center md:text-left">
-        <a href="privacy.html" class="hover:text-primary">Privacy Notice</a> |
-        <a href="terms.html" class="hover:text-primary ml-1">Terms of Use</a> |
-        <a href="cookies.html" class="hover:text-primary ml-1">Cookie Policy</a> |
-        <a href="impressum.html" class="hover:text-primary ml-1">Impressum</a>
-      </div>
-      <div class="mt-2 text-center md:text-left">
-        <a href="#" onclick="showCustomize(); return false;" class="hover:text-primary text-xs">Cookie Settings</a>
-      </div>
-    </div>
-    <div class="text-sm md:w-1/2 md:text-right text-center space-y-3">
-      <div class="flex items-center justify-center md:justify-end gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M2 4.5v15a1.5 1.5 0 001.5 1.5h17a1.5 1.5 0 001.5-1.5v-15A1.5 1.5 0 0020.5 3h-17A1.5 1.5 0 002 4.5zM4 6l8 5 8-5" /></svg>
-        <a href="mailto:info@parseclab.hr" class="hover:text-primary">info@parseclab.hr</a>
-      </div>
-      <div class="flex items-center justify-center md:justify-end gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2C8 2 5 5 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-4-3-7-7-7z" /></svg>
-        <a href="https://maps.app.goo.gl/ZEKaRFJjEMw4awVE6" target="_blank" class="hover:text-primary">ZICER, Zagreb, Croatia</a>
-      </div>
-      <div class="flex items-center justify-center md:justify-end gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-        <span>+385(0)91 1234 567</span>
-      </div>
-      <div class="flex items-center justify-center md:justify-end gap-2">
-        <img src="images/InBug-Black.png" alt="LinkedIn" class="h-4 w-4">
-        <a href="https://www.linkedin.com/feed/" target="_blank" class="hover:text-primary">LinkedIn</a>
-      </div>
+  <!-- Cookie Customize Modal -->
+  <div id="cookie-customize-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-[99999] flex items-center justify-center p-6">
+    <div class="bg-white rounded-lg shadow-xl max-w-2xl w-full p-6 overflow-y-auto max-h-[90vh]">
+      <h3 class="text-2xl font-bold mb-4">Customize Cookie Preferences</h3>
+      <form id="cookie-preferences-form" class="space-y-4">
+        <div><label class="flex items-center gap-3"><input type="checkbox" disabled checked class="accent-cyan-500" /><span><strong>Essential</strong> &ndash; Always active for site functionality.</span></label></div>
+        <div><label class="flex items-center gap-3"><input type="checkbox" id="performance" class="accent-cyan-500" /><span><strong>Performance</strong> &ndash; Helps us understand site usage via analytics.</span></label></div>
+        <div><label class="flex items-center gap-3"><input type="checkbox" id="functional" class="accent-cyan-500" /><span><strong>Functional</strong> &ndash; Enables features like videos, maps, and chat.</span></label></div>
+        <div><label class="flex items-center gap-3"><input type="checkbox" id="marketing" class="accent-cyan-500" /><span><strong>Marketing</strong> &ndash; For personalized ads and remarketing.</span></label></div>
+        <div><label class="flex items-center gap-3"><input type="checkbox" id="preferences" class="accent-cyan-500" /><span><strong>Preferences</strong> &ndash; Saves your language, region, and theme.</span></label></div>
+        <div class="flex justify-end mt-6 gap-3">
+          <button type="button" onclick="hideCustomize()" class="px-4 py-2 text-sm border rounded text-gray-700 hover:bg-gray-100">Cancel</button>
+          <button type="submit" class="px-4 py-2 text-sm bg-cyan-500 text-white rounded hover:bg-cyan-600">Save Preferences</button>
+        </div>
+      </form>
     </div>
   </div>
-</footer>
 
-<!-- Scripts -->
-<script>
-  AOS.init({ once: true, duration: 1000 });
-  document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.getElementById('hamburger');
-    const closeMenu = document.getElementById('closeMenu');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const menuPanel = mobileMenu.querySelector('div');
-    const mobileLinks = mobileMenu.querySelectorAll('a');
-    hamburger.addEventListener('click', function () { mobileMenu.classList.remove('hidden'); });
-    closeMenu.addEventListener('click', function () { mobileMenu.classList.add('hidden'); });
-    mobileLinks.forEach(link => { link.addEventListener('click', function () { mobileMenu.classList.add('hidden'); }); });
-    mobileMenu.addEventListener('click', function (e) { if (!menuPanel.contains(e.target)) mobileMenu.classList.add('hidden'); });
-  });
-  let lastScrollTop = 0;
-  const header = document.getElementById('mainHeader');
-  window.addEventListener('scroll', function () {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop > lastScrollTop && scrollTop > 100) {
-      header.classList.remove('show-header');
-      header.classList.add('hide-header');
-    } else {
-      header.classList.remove('hide-header');
-      header.classList.add('show-header');
-    }
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-  });
-</script>
-
-<!-- Cookie Banner -->
-<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-300 shadow-lg z-[9999] p-6 md:p-8 transition-opacity duration-300">
-  <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-    <div class="w-full min-w-0 break-words">
-      <h3 class="text-lg font-semibold mb-2">We use cookies</h3>
-      <p class="text-sm text-gray-700">We use cookies to enhance your experience, analyze site traffic, and serve targeted advertisements. Learn more in our <a href="privacy.html" class="text-blue-600 underline">Privacy Notice</a>.</p>
-    </div>
-    <div class="flex gap-3 flex-nowrap flex-shrink-0">
-      <button onclick="showCustomize()" class="px-4 py-2 text-sm font-medium text-gray-700 border border-gray-300 rounded hover:bg-gray-100">Customize</button>
-      <button onclick="acceptCookies()" class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded hover:bg-blue-700">Accept All</button>
-      <button onclick="rejectCookies()" class="px-4 py-2 text-sm font-medium text-gray-700 border border-gray-300 rounded hover:bg-gray-100">Reject All</button>
-    </div>
-  </div>
-</div>
-<div id="cookie-customize-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-[99999] flex items-center justify-center p-6">
-  <div class="bg-white rounded-lg shadow-xl max-w-2xl w-full p-6 overflow-y-auto max-h-[90vh]">
-    <h3 class="text-2xl font-bold mb-4">Customize Cookie Preferences</h3>
-    <form id="cookie-preferences-form" class="space-y-4">
-      <div><label class="flex items-center gap-3"><input type="checkbox" disabled checked class="accent-blue-600" /><span><strong>Essential</strong> &ndash; Always active for site functionality.</span></label></div>
-      <div><label class="flex items-center gap-3"><input type="checkbox" id="performance" class="accent-blue-600" /><span><strong>Performance</strong> &ndash; Helps us understand site usage via analytics.</span></label></div>
-      <div><label class="flex items-center gap-3"><input type="checkbox" id="functional" class="accent-blue-600" /><span><strong>Functional</strong> &ndash; Enables features like videos, maps, and chat.</span></label></div>
-      <div><label class="flex items-center gap-3"><input type="checkbox" id="marketing" class="accent-blue-600" /><span><strong>Marketing</strong> &ndash; For personalized ads and remarketing.</span></label></div>
-      <div><label class="flex items-center gap-3"><input type="checkbox" id="preferences" class="accent-blue-600" /><span><strong>Preferences</strong> &ndash; Saves your language, region, and theme.</span></label></div>
-      <div class="flex justify-end mt-6 gap-3">
-        <button type="button" onclick="hideCustomize()" class="px-4 py-2 text-sm border rounded text-gray-700 hover:bg-gray-100">Cancel</button>
-        <button type="submit" class="px-4 py-2 text-sm bg-blue-600 text-white rounded hover:bg-blue-700">Save Preferences</button>
-      </div>
-    </form>
-  </div>
-</div>
-<script>
-  window.addEventListener("DOMContentLoaded", () => { const consent = localStorage.getItem("cookie-consent"); if (consent) document.getElementById("cookie-banner").remove(); });
-  function acceptCookies() { localStorage.setItem("cookie-consent", JSON.stringify({ essential:true, performance:true, functional:true, marketing:true, preferences:true })); document.getElementById("cookie-banner").remove(); location.reload(); }
-  function rejectCookies() { localStorage.setItem("cookie-consent", JSON.stringify({ essential:true, performance:false, functional:false, marketing:false, preferences:false })); document.getElementById("cookie-banner").remove(); location.reload(); }
-  function showCustomize() { document.getElementById("cookie-customize-modal").classList.remove("hidden"); }
-  function hideCustomize() { document.getElementById("cookie-customize-modal").classList.add("hidden"); }
-  document.getElementById("cookie-preferences-form").addEventListener("submit", function(e) { e.preventDefault(); const consent = { essential:true, performance:document.getElementById("performance").checked, functional:document.getElementById("functional").checked, marketing:document.getElementById("marketing").checked, preferences:document.getElementById("preferences").checked }; localStorage.setItem("cookie-consent", JSON.stringify(consent)); document.getElementById("cookie-banner").remove(); document.getElementById("cookie-customize-modal").classList.add("hidden"); location.reload(); });
-</script>
+  <script>
+    window.addEventListener("DOMContentLoaded", function() {
+      var consent = localStorage.getItem("cookie-consent");
+      if (consent) { var banner = document.getElementById("cookie-banner"); if (banner) banner.remove(); }
+    });
+    function acceptCookies() { localStorage.setItem("cookie-consent", JSON.stringify({ essential:true, performance:true, functional:true, marketing:true, preferences:true })); document.getElementById("cookie-banner").remove(); location.reload(); }
+    function rejectCookies() { localStorage.setItem("cookie-consent", JSON.stringify({ essential:true, performance:false, functional:false, marketing:false, preferences:false })); document.getElementById("cookie-banner").remove(); location.reload(); }
+    function showCustomize() { document.getElementById("cookie-customize-modal").classList.remove("hidden"); }
+    function hideCustomize() { document.getElementById("cookie-customize-modal").classList.add("hidden"); }
+    document.getElementById("cookie-preferences-form").addEventListener("submit", function(e) { e.preventDefault(); var consent = { essential:true, performance:document.getElementById("performance").checked, functional:document.getElementById("functional").checked, marketing:document.getElementById("marketing").checked, preferences:document.getElementById("preferences").checked }; localStorage.setItem("cookie-consent", JSON.stringify(consent)); var banner = document.getElementById("cookie-banner"); if (banner) banner.remove(); document.getElementById("cookie-customize-modal").classList.add("hidden"); location.reload(); });
+  </script>
 
 </body>
 </html>

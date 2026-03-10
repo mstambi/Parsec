@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Services - Parsec Lab</title>
-  <meta name="description" content="Parsec Lab services: datacenter MEP design, campus infrastructure, innovative cooling equipment design and production, BIM coordination, and smart building systems.">
+  <title>Engineering Services - Parsec Lab | Complete Data Center Design</title>
+  <meta name="description" content="Complete engineering services across all trades: mechanical, electrical, controls, architecture, BIM coordination, and cooling equipment development for data center projects.">
   <link rel="icon" type="image/svg+xml" href="images/parsecLogo_blackVector.svg">
   <link rel="canonical" href="https://www.parseclab.hr/services">
-  <meta property="og:title" content="Our Services - Parsec Lab">
-  <meta property="og:description" content="Parsec Lab services: datacenter MEP design, campus infrastructure, innovative cooling equipment design and production, BIM coordination, and smart building systems.">
+  <meta property="og:title" content="Engineering Services - Parsec Lab | Complete Data Center Design">
+  <meta property="og:description" content="Complete engineering services across all trades: mechanical, electrical, controls, architecture, BIM coordination, and cooling equipment development for data center projects.">
   <meta property="og:url" content="https://www.parseclab.hr/services">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://www.parseclab.hr/images/parsecLogo_blackVector.svg">
@@ -20,15 +20,20 @@
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: { sans: ['Inter', 'sans-serif'] },
-          colors: { primary: '#1d4ed8', dark: '#0f172a' },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            primary: '#0f172a',
+            accent: '#06b6d4',
+          },
         },
       },
     };
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="font-sans text-gray-800 overflow-x-hidden">
@@ -41,9 +46,12 @@
     </a>
     <nav>
       <ul class="hidden md:flex space-x-6 font-medium">
-        <li><a href="about.html" class="hover:text-primary">Who We Are</a></li>
-        <li><a href="services.html" class="hover:text-primary">What We Do</a></li>
-        <li><a href="contact.html" class="hover:text-primary">Contact</a></li>
+        <li><a href="about.html" class="hover:text-accent transition-colors">About</a></li>
+        <li><a href="services.html" class="text-accent border-b-2 border-accent pb-1">Services</a></li>
+        <li><a href="projects.html" class="hover:text-accent transition-colors">Projects</a></li>
+        <li><a href="technology.html" class="hover:text-accent transition-colors">Technology</a></li>
+        <li><a href="careers.html" class="hover:text-accent transition-colors">Careers</a></li>
+        <li><a href="contact.html" class="hover:text-accent transition-colors">Contact</a></li>
       </ul>
     </nav>
     <div class="md:hidden">
@@ -61,197 +69,380 @@
   <div class="bg-white w-3/4 p-4 space-y-6 absolute top-0 right-0 h-full overflow-y-auto">
     <button id="closeMenu" class="text-gray-800 mb-4 text-xl font-bold">&times;</button>
     <ul class="space-y-6">
-      <li><a href="about.html" class="block hover:text-primary">Who We Are</a></li>
-      <li><a href="services.html" class="block hover:text-primary">What We Do</a></li>
-      <li><a href="contact.html" class="block hover:text-primary">Contact</a></li>
+      <li><a href="about.html" class="block hover:text-accent">About</a></li>
+      <li><a href="services.html" class="block text-accent font-semibold">Services</a></li>
+      <li><a href="projects.html" class="block hover:text-accent">Projects</a></li>
+      <li><a href="technology.html" class="block hover:text-accent">Technology</a></li>
+      <li><a href="careers.html" class="block hover:text-accent">Careers</a></li>
+      <li><a href="contact.html" class="block hover:text-accent">Contact</a></li>
     </ul>
   </div>
 </div>
 
-<!-- What We Do Overview -->
-<section id="what-we-do" class="py-20 bg-gray-100">
-  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+<!-- Hero Banner -->
+<section class="relative h-[40vh] min-h-[300px] bg-cover bg-center flex items-center justify-center text-white text-center" style="background-image: url('images/Data-Center-hero.webp');">
+  <div class="absolute inset-0 bg-black/60"></div>
+  <div class="relative z-10 max-w-4xl mx-auto px-4" data-aos="fade-up" data-aos-duration="1000">
+    <p class="text-cyan-400 font-semibold tracking-widest uppercase text-sm mb-4">Our Services</p>
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">Complete Engineering. Every Trade.</h1>
+  </div>
+</section>
+
+<!-- Service Overview -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-3xl" data-aos="fade-up">
+      <p class="text-cyan-500 font-semibold tracking-widest uppercase text-sm mb-4">Capabilities</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">From Concept to Commissioning, Across Every Discipline</h2>
+      <p class="text-gray-600 text-lg leading-relaxed mb-4">
+        Parsec Lab is a multidisciplinary engineering firm that covers every trade required to deliver a data center project. From mechanical and electrical systems to controls, architecture, and custom cooling equipment, our integrated approach ensures that every discipline works in concert from day one.
+      </p>
+      <p class="text-gray-600 text-lg leading-relaxed mb-10">
+        Unlike traditional MEP-only firms, Parsec Lab provides architecture, mechanical, electrical, controls, and equipment development under one roof. This eliminates coordination gaps between separate consultants, reduces change orders during construction, and accelerates project delivery from concept through commissioning.
+      </p>
+    </div>
+
+    <!-- Quick-nav pill buttons -->
+    <div id="serviceNav" class="flex flex-wrap gap-3 py-4 bg-white/95 backdrop-blur-sm" data-aos="fade-up" data-aos-delay="200">
+      <a href="#mechanical" class="px-5 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-cyan-500 hover:text-white transition-all duration-200">Mechanical</a>
+      <a href="#electrical" class="px-5 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-cyan-500 hover:text-white transition-all duration-200">Electrical</a>
+      <a href="#controls" class="px-5 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-cyan-500 hover:text-white transition-all duration-200">Controls &amp; Automation</a>
+      <a href="#architecture" class="px-5 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-cyan-500 hover:text-white transition-all duration-200">Architecture</a>
+      <a href="#bim" class="px-5 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-cyan-500 hover:text-white transition-all duration-200">BIM Coordination</a>
+      <a href="#equipment" class="px-5 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-cyan-500 hover:text-white transition-all duration-200">Equipment Development</a>
+    </div>
+  </div>
+</section>
+
+<!-- Section A - Mechanical Engineering (Odd: text left, image right) -->
+<section id="mechanical" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
     <div data-aos="fade-right">
-      <img src="images/about-photo.jpg" alt="Engineering services" class="rounded-2xl shadow-md">
+      <h3 class="text-2xl font-bold text-primary border-l-4 border-cyan-500 pl-4 mb-6">Mechanical Engineering</h3>
+      <p class="text-gray-600 text-lg leading-relaxed mb-6">
+        Precision HVAC and cooling system design for mission-critical environments. Our mechanical engineers specialize in chilled water plants, direct liquid cooling, economizer strategies, and heat rejection systems. We design for the full range from edge deployments to 60+ MW hyperscale campuses.
+      </p>
+      <ul class="space-y-3">
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Chilled water plant design and optimization</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Direct liquid cooling (DLC) integration for AI/HPC</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Air-side and water-side economizer strategies</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Hot and cold aisle containment</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Fire protection and suppression systems</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Piping design and hydraulic analysis</span>
+        </li>
+      </ul>
     </div>
     <div data-aos="fade-left">
-      <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">What We Do</h2>
-      <p class="text-gray-700 text-lg leading-relaxed mb-6">
-        Parsec Lab provides complete datacenter and campus MEP engineering services. From concept through commissioning, we design resilient mechanical, electrical, and controls systems for mission-critical facilities. We also design and produce innovative cooling equipment purpose-built for high-density compute environments.
-      </p>
-      <p class="text-gray-700 text-lg leading-relaxed mb-6">
-        We partner with enterprises, hyperscalers, and colocation providers to turn concepts into operational assets. Whether it's a greenfield datacenter campus or a brownfield retrofit, our approach is collaborative, technically rigorous, and informed by real-world engineering experience.
-      </p>
+      <img src="images/UPS_room.png" alt="Mechanical engineering - cooling and HVAC systems" class="rounded-2xl shadow-lg w-full" />
     </div>
   </div>
+</section>
 
-  <!-- Services Cards -->
-  <div class="mt-16 max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-10 text-center" data-aos="fade-up">
-    <div class="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition">
-      <h3 class="text-xl font-semibold text-dark mb-4">End-to-End MEP Design</h3>
-      <p class="text-gray-600 leading-relaxed">Full-scope mechanical, electrical, and plumbing design for datacenter facilities and campus infrastructure. From site master planning to as-built documentation, our deliverables ensure technical rigor and code compliance.</p>
+<!-- Section B - Electrical Engineering (Even: image left, text right) -->
+<section id="electrical" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+    <div data-aos="fade-right">
+      <img src="images/electrical.avif" alt="Electrical engineering - power distribution systems" class="rounded-2xl shadow-lg w-full" />
     </div>
-    <div class="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition">
-      <h3 class="text-xl font-semibold text-dark mb-4">Cooling Equipment Design & Production</h3>
-      <p class="text-gray-600 leading-relaxed">We design and manufacture innovative cooling solutions including custom air handling units, rear-door heat exchangers, and liquid cooling distribution systems optimized for high-density compute racks.</p>
-    </div>
-    <div class="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition">
-      <h3 class="text-xl font-semibold text-dark mb-4">Scalable Infrastructure</h3>
-      <p class="text-gray-600 leading-relaxed">Whether it's a 1 MW edge site or a 100 MW hyperscale campus, our modular design frameworks allow rapid deployment and seamless capacity scaling with minimal rework.</p>
-    </div>
-  </div>
-
-  <!-- Capabilities -->
-  <div class="mt-20 max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-start" data-aos="fade-up">
-    <div>
-      <h3 class="text-2xl font-semibold text-dark mb-4">Mission-Critical Systems Integration</h3>
-      <p class="text-gray-600 text-lg leading-relaxed mb-4">
-        Our engineers specialize in integrating complex power, cooling, and control systems into unified, fault-tolerant architectures. We work across Tier I-IV environments for optimal reliability.
+    <div data-aos="fade-left">
+      <h3 class="text-2xl font-bold text-primary border-l-4 border-cyan-500 pl-4 mb-6">Electrical Engineering</h3>
+      <p class="text-gray-600 text-lg leading-relaxed mb-6">
+        Power distribution engineered for uptime. From medium-voltage switchgear to rack-level PDUs, our electrical team designs redundant power architectures across Tier I through Tier IV. Every scenario is modeled: dual-feed redundancy, generator run-time analysis, arc flash studies, and power quality optimization.
       </p>
-      <ul class="list-disc list-inside text-gray-600 text-lg space-y-1">
-        <li>Redundant UPS & generator systems</li>
-        <li>Hot & cold aisle containment</li>
-        <li>Automated building & power management</li>
-        <li>Fire detection & suppression design</li>
-        <li>Direct liquid cooling integration</li>
-      </ul>
-    </div>
-    <div>
-      <h3 class="text-2xl font-semibold text-dark mb-4">Project Delivery & Support</h3>
-      <p class="text-gray-600 text-lg leading-relaxed mb-4">
-        We go beyond design by supporting execution and operations throughout the facility lifecycle:
-      </p>
-      <ul class="list-disc list-inside text-gray-600 text-lg space-y-1">
-        <li>Construction administration & commissioning</li>
-        <li>Regulatory approvals and compliance documentation</li>
-        <li>Ongoing performance analysis & infrastructure audits</li>
-        <li>Capacity planning for IT expansion</li>
-        <li>Campus MEP coordination across multiple buildings</li>
+      <ul class="space-y-3">
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Medium-voltage switchgear and transformer sizing</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">UPS system design and battery energy storage</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Generator paralleling and fuel systems</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Busway routing and PDU specifications</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Arc flash analysis and protection coordination</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Renewable energy integration</span>
+        </li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- Detailed Service Sections -->
-<section class="relative bg-gradient-to-br from-gray-100 via-white to-gray-50 text-gray-800 py-24 overflow-hidden">
-  <div class="max-w-6xl mx-auto px-6 relative z-10">
-
-    <!-- Navigation Buttons -->
-    <div class="flex flex-wrap justify-center gap-4 mb-16" data-aos="fade-up">
-      <a href="#design" class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Design</a>
-      <a href="#power" class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Power & Cooling</a>
-      <a href="#cooling-equipment" class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Cooling Equipment</a>
-      <a href="#bim" class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">BIM</a>
-      <a href="#security" class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Security</a>
-      <a href="#remoteops" class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Remote Ops</a>
+<!-- Section C - Controls & Automation (Odd: text left, image right) -->
+<section id="controls" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+    <div data-aos="fade-right">
+      <h3 class="text-2xl font-bold text-primary border-l-4 border-cyan-500 pl-4 mb-6">Controls &amp; Automation</h3>
+      <p class="text-gray-600 text-lg leading-relaxed mb-6">
+        Intelligent infrastructure starts with smart controls. We design and implement BMS, DCIM, and custom telemetry platforms that provide real-time performance data, automated fault response, and trend analysis. Whether on-site or remote, operators get full visibility.
+      </p>
+      <ul class="space-y-3">
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Building Management System (BMS) design</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Data Center Infrastructure Management (DCIM)</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">PLC programming and sequence of operations</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Remote monitoring dashboards</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Automated cooling and power control sequences</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Integration with third-party platforms</span>
+        </li>
+      </ul>
     </div>
-
-    <!-- Section 1 - Design -->
-    <div id="design" class="grid md:grid-cols-2 gap-16 mb-28 items-center bg-white bg-opacity-60 rounded-3xl p-10 shadow-xl backdrop-blur-md" data-aos="fade-right">
-      <div>
-        <h3 class="text-3xl font-bold mb-4 text-blue-600">Datacenter & Campus MEP Design</h3>
-        <p class="text-lg leading-relaxed text-gray-700">Parsec Lab provides holistic MEP engineering for datacenter facilities and surrounding campus infrastructure. Our team integrates mechanical, electrical, plumbing, and controls disciplines from day one, ensuring coordinated designs that minimize change orders and accelerate construction timelines.</p>
-      </div>
-      <img src="images/Data-Center-hero.webp" alt="Datacenter MEP design" class="rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500" />
+    <div data-aos="fade-left">
+      <img src="images/remote_ops.png" alt="Controls and automation - BMS and DCIM systems" class="rounded-2xl shadow-lg w-full" />
     </div>
-
-    <!-- Section 2 - Power & Cooling -->
-    <div id="power" class="grid md:grid-cols-2 gap-16 mb-28 items-center bg-white bg-opacity-60 rounded-3xl p-10 shadow-xl backdrop-blur-md" data-aos="fade-left">
-      <img src="images/UPS_room.png" alt="Power and cooling systems" class="rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500" />
-      <div>
-        <h3 class="text-3xl font-bold mb-4 text-blue-600">Power & Cooling Systems</h3>
-        <p class="text-lg leading-relaxed text-gray-700">Uptime starts with power and cooling done right. Our electrical engineers model every scenario from dual-feed redundancy to generator run-time analysis. On the mechanical side, we design precision cooling systems including chilled water plants, economizer strategies, and direct liquid cooling for AI/HPC workloads.</p>
-      </div>
-    </div>
-
-    <!-- Section 3 - Cooling Equipment -->
-    <div id="cooling-equipment" class="grid md:grid-cols-2 gap-16 mb-28 items-center bg-white bg-opacity-60 rounded-3xl p-10 shadow-xl backdrop-blur-md" data-aos="fade-right">
-      <div>
-        <h3 class="text-3xl font-bold mb-4 text-blue-600">Innovative Cooling Equipment</h3>
-        <p class="text-lg leading-relaxed text-gray-700">Beyond design services, Parsec Lab engineers and produces custom cooling equipment. Our in-house team develops purpose-built heat exchangers, coolant distribution units, and modular cooling systems designed for the extreme demands of modern high-density datacenter environments. From prototype to production, we control every step.</p>
-      </div>
-      <img src="images/electrical.avif" alt="Cooling equipment production" class="rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500" />
-    </div>
-
-    <!-- Section 4 - BIM -->
-    <div id="bim" class="grid md:grid-cols-2 gap-16 mb-28 items-center bg-white bg-opacity-60 rounded-3xl p-10 shadow-xl backdrop-blur-md" data-aos="fade-left">
-      <img src="images/BIM.webp" alt="BIM coordination" class="rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500" />
-      <div>
-        <h3 class="text-3xl font-bold mb-4 text-blue-600">BIM Coordination</h3>
-        <p class="text-lg leading-relaxed text-gray-700">Our BIM workflows drive clash-free construction, faster installations, and real-time cost control. Every rack, cable tray, and cooling unit is modeled with purpose. We maintain digital twins that support both construction and ongoing facility management throughout the asset lifecycle.</p>
-      </div>
-    </div>
-
-    <!-- Section 5 - Security -->
-    <div id="security" class="grid md:grid-cols-2 gap-16 mb-28 items-center bg-white bg-opacity-60 rounded-3xl p-10 shadow-xl backdrop-blur-md" data-aos="fade-right">
-      <div>
-        <h3 class="text-3xl font-bold mb-4 text-blue-600">Security & Compliance</h3>
-        <p class="text-lg leading-relaxed text-gray-700">Physical security, regulatory compliance, and fire safety are engineered into every facility. From access control and compartmentalized fire zones to full code compliance documentation, we design systems that protect both people and critical infrastructure.</p>
-      </div>
-      <img src="images/security.avif" alt="Security systems" class="rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500" />
-    </div>
-
-    <!-- Section 6 - Remote Ops -->
-    <div id="remoteops" class="grid md:grid-cols-2 gap-16 mb-28 items-center bg-white bg-opacity-60 rounded-3xl p-10 shadow-xl backdrop-blur-md" data-aos="fade-left">
-      <img src="images/remote_ops.png" alt="Remote monitoring" class="rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500" />
-      <div>
-        <h3 class="text-3xl font-bold mb-4 text-blue-600">Smart Infrastructure & Remote Ops</h3>
-        <p class="text-lg leading-relaxed text-gray-700">We integrate BMS, DCIM, and custom telemetry into a unified platform. Whether you're on-site or remote, our dashboards provide real-time performance data, alerts, and trend analysis. Controls engineering is at the core of every smart infrastructure solution we deliver.</p>
-      </div>
-    </div>
-
   </div>
 </section>
 
-<!-- Connect CTA -->
-<section class="bg-gradient-to-b from-white to-gray-50 py-24 border-t border-gray-200" data-aos="fade-up">
-  <div class="max-w-6xl mx-auto px-6 md:px-12">
-    <div class="flex flex-col md:flex-row items-center justify-between gap-12">
-      <div class="md:w-1/2">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">Ready to Start Your Project?</h2>
-        <p class="text-lg md:text-xl text-gray-600 mb-8">From concept to commissioning, our team delivers complete datacenter and campus MEP solutions. Let's discuss your next project.</p>
-        <a href="contact.html" class="group inline-block relative text-white text-lg font-semibold transition duration-300 transform hover:scale-105">
-          <span class="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-tl-[1.5rem] rounded-br-[1.5rem] rounded-tr-[0] rounded-bl-[0] transition-all duration-300 group-hover:from-blue-700 group-hover:to-indigo-700"></span>
-          <span class="relative px-6 py-2 flex items-center gap-2 z-10">
-            <svg class="w-5 h-5 -ml-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21 12H3m6 6l-6-6 6-6" />
-            </svg>
-            Get In Touch
-          </span>
+<!-- Section D - Architecture (Even: image left, text right) -->
+<section id="architecture" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+    <div data-aos="fade-right">
+      <img src="images/BIM.webp" alt="Architecture - data center facility design" class="rounded-2xl shadow-lg w-full" />
+    </div>
+    <div data-aos="fade-left">
+      <h3 class="text-2xl font-bold text-primary border-l-4 border-cyan-500 pl-4 mb-6">Architecture</h3>
+      <p class="text-gray-600 text-lg leading-relaxed mb-6">
+        Data center architecture is more than floor plans. Our architects optimize facility layouts for operational workflow, thermal management, structural loading, and regulatory compliance. From greenfield campuses to brownfield retrofits, we deliver designs that work for both people and machines.
+      </p>
+      <ul class="space-y-3">
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Facility master planning and site layout</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Building envelope and structural coordination</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Raised floor and slab-on-grade configurations</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Regulatory compliance and permitting</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Space planning for IT, mechanical, and electrical rooms</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Modular and premanufactured building design</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Section E - BIM Coordination (Odd: text left, image right) -->
+<section id="bim" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+    <div data-aos="fade-right">
+      <h3 class="text-2xl font-bold text-primary border-l-4 border-cyan-500 pl-4 mb-6">BIM Coordination</h3>
+      <p class="text-gray-600 text-lg leading-relaxed mb-6">
+        Every cable tray, cooling unit, and structural member in one coordinated model. Our BIM workflows drive clash-free construction, faster installations, and real-time cost control. We maintain digital twins that support both construction and ongoing facility management.
+      </p>
+      <ul class="space-y-3">
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">3D coordination across all disciplines</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Clash detection and resolution</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Construction-ready documentation</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Digital twin development and maintenance</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Quantity takeoffs and cost tracking</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">As-built documentation and handover</span>
+        </li>
+      </ul>
+    </div>
+    <div data-aos="fade-left">
+      <img src="images/BIM.webp" alt="BIM coordination - 3D modeling and clash detection" class="rounded-2xl shadow-lg w-full" />
+    </div>
+  </div>
+</section>
+
+<!-- Section F - Cooling Equipment Development (Even: image left, text right) -->
+<section id="equipment" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+    <div data-aos="fade-right">
+      <img src="images/engineering.jfif" alt="Cooling equipment development and manufacturing" class="rounded-2xl shadow-lg w-full" />
+    </div>
+    <div data-aos="fade-left">
+      <h3 class="text-2xl font-bold text-primary border-l-4 border-cyan-500 pl-4 mb-6">Cooling Equipment Development</h3>
+      <p class="text-gray-600 text-lg leading-relaxed mb-6">
+        Beyond design services, Parsec Lab engineers and produces custom cooling equipment. From concept to production, our team develops air handling units, rear-door heat exchangers, coolant distribution units, and modular cooling systems purpose-built for the extreme demands of high-density data centers.
+      </p>
+      <ul class="space-y-3">
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Custom Air Handling Units (150-300 kW)</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Rear-door heat exchangers</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Coolant Distribution Units (CDUs)</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Modular cooling systems</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Prototype development and testing</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+          <span class="text-gray-700">Production-ready manufacturing documentation</span>
+        </li>
+      </ul>
+      <div class="mt-8">
+        <a href="technology.html" class="inline-flex items-center gap-2 text-cyan-600 font-semibold hover:text-cyan-700 transition-colors">
+          Learn More About Our Technology
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
         </a>
       </div>
-      <div class="md:w-1/2 flex justify-center">
-        <img src="images/parsecLogo_blackVector.svg" alt="Parsec Lab" class="max-w-md w-full">
+    </div>
+  </div>
+</section>
+
+<!-- Project Delivery Section -->
+<section class="bg-gray-50 py-24">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold text-primary">Beyond Design: Full Project Support</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8" data-aos="fade-up" data-aos-delay="200">
+      <!-- Construction Administration -->
+      <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center mb-5">
+          <svg class="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+        </div>
+        <h3 class="text-xl font-bold text-primary mb-3">Construction Administration</h3>
+        <p class="text-gray-600 leading-relaxed">On-site support, RFI management, and contractor coordination throughout the construction phase to ensure design intent is maintained.</p>
+      </div>
+      <!-- Commissioning Support -->
+      <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center mb-5">
+          <svg class="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        </div>
+        <h3 class="text-xl font-bold text-primary mb-3">Commissioning Support</h3>
+        <p class="text-gray-600 leading-relaxed">Functional testing, integrated systems testing, and handover documentation to verify every system performs as designed before go-live.</p>
+      </div>
+      <!-- Capacity Planning -->
+      <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center mb-5">
+          <svg class="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" /></svg>
+        </div>
+        <h3 class="text-xl font-bold text-primary mb-3">Capacity Planning</h3>
+        <p class="text-gray-600 leading-relaxed">IT load forecasting and infrastructure scaling strategies that ensure your facility can grow with demand without costly rework.</p>
+      </div>
+      <!-- Regulatory Compliance -->
+      <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center mb-5">
+          <svg class="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+        </div>
+        <h3 class="text-xl font-bold text-primary mb-3">Regulatory Compliance</h3>
+        <p class="text-gray-600 leading-relaxed">Code analysis, permit documentation, and authority approvals across jurisdictions to keep your project on track and fully compliant.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="bg-primary py-20">
+  <div class="max-w-4xl mx-auto px-4 text-center" data-aos="fade-up">
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Start Your Project?</h2>
+    <p class="text-gray-300 text-lg md:text-xl mb-10 max-w-2xl mx-auto">From concept to commissioning, our multidisciplinary team delivers complete data center solutions.</p>
+    <a href="contact.html" class="inline-block bg-cyan-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-cyan-600 transition-colors duration-200">Get In Touch</a>
   </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg-dark text-gray-400 py-8">
+<footer class="bg-primary text-gray-400 py-8">
   <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between">
     <div class="text-sm mb-6 md:mb-0 md:w-1/2">
       <p class="mb-1 text-center md:text-left">Parsec Lab specializes in datacenter and campus MEP design,</p>
       <p class="mb-1 text-center md:text-left">innovative cooling equipment engineering and production,</p>
       <p class="mb-4 text-center md:text-left">delivering resilient, efficient infrastructure worldwide.</p>
       <div class="text-center md:text-left">
-        <a href="privacy.html" class="hover:text-primary">Privacy Notice</a> |
-        <a href="terms.html" class="hover:text-primary ml-1">Terms of Use</a> |
-        <a href="cookies.html" class="hover:text-primary ml-1">Cookie Policy</a> |
-        <a href="impressum.html" class="hover:text-primary ml-1">Impressum</a>
+        <a href="privacy.html" class="hover:text-accent">Privacy Notice</a> |
+        <a href="terms.html" class="hover:text-accent ml-1">Terms of Use</a> |
+        <a href="cookies.html" class="hover:text-accent ml-1">Cookie Policy</a> |
+        <a href="impressum.html" class="hover:text-accent ml-1">Impressum</a>
       </div>
       <div class="mt-2 text-center md:text-left">
-        <a href="#" onclick="showCustomize(); return false;" class="hover:text-primary text-xs">Cookie Settings</a>
+        <a href="#" onclick="showCustomize(); return false;" class="hover:text-accent text-xs">Cookie Settings</a>
       </div>
     </div>
     <div class="text-sm md:w-1/2 md:text-right text-center space-y-3">
       <div class="flex items-center justify-center md:justify-end gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M2 4.5v15a1.5 1.5 0 001.5 1.5h17a1.5 1.5 0 001.5-1.5v-15A1.5 1.5 0 0020.5 3h-17A1.5 1.5 0 002 4.5zM4 6l8 5 8-5" /></svg>
-        <a href="mailto:info@parseclab.hr" class="hover:text-primary">info@parseclab.hr</a>
+        <a href="mailto:info@parseclab.hr" class="hover:text-accent">info@parseclab.hr</a>
       </div>
       <div class="flex items-center justify-center md:justify-end gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2C8 2 5 5 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-4-3-7-7-7z" /></svg>
-        <a href="https://maps.app.goo.gl/ZEKaRFJjEMw4awVE6" target="_blank" class="hover:text-primary">ZICER, Zagreb, Croatia</a>
+        <a href="https://maps.app.goo.gl/ZEKaRFJjEMw4awVE6" target="_blank" class="hover:text-accent">ZICER, Zagreb, Croatia</a>
       </div>
       <div class="flex items-center justify-center md:justify-end gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
@@ -259,12 +450,13 @@
       </div>
       <div class="flex items-center justify-center md:justify-end gap-2">
         <img src="images/InBug-Black.png" alt="LinkedIn" class="h-4 w-4">
-        <a href="https://www.linkedin.com/feed/" target="_blank" class="hover:text-primary">LinkedIn</a>
+        <a href="https://www.linkedin.com/feed/" target="_blank" class="hover:text-accent">LinkedIn</a>
       </div>
     </div>
   </div>
 </footer>
 
+<!-- Scripts: AOS, hamburger, scroll-hide header -->
 <script>
   AOS.init({ once: true, duration: 1000 });
 
@@ -275,14 +467,31 @@
     const menuPanel = mobileMenu.querySelector('div');
     const mobileLinks = mobileMenu.querySelectorAll('a');
 
-    hamburger.addEventListener('click', function () { mobileMenu.classList.remove('hidden'); });
-    closeMenu.addEventListener('click', function () { mobileMenu.classList.add('hidden'); });
-    mobileLinks.forEach(link => { link.addEventListener('click', function () { mobileMenu.classList.add('hidden'); }); });
-    mobileMenu.addEventListener('click', function (e) { if (!menuPanel.contains(e.target)) mobileMenu.classList.add('hidden'); });
+    hamburger.addEventListener('click', function () {
+      mobileMenu.classList.remove('hidden');
+    });
+
+    closeMenu.addEventListener('click', function () {
+      mobileMenu.classList.add('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', function () {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    mobileMenu.addEventListener('click', function (e) {
+      if (!menuPanel.contains(e.target)) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
   });
 
+  // Scroll-hide header
   let lastScrollTop = 0;
   const header = document.getElementById('mainHeader');
+
   window.addEventListener('scroll', function () {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop && scrollTop > 100) {
@@ -294,6 +503,47 @@
     }
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
   });
+
+  // Sticky service nav on scroll
+  (function() {
+    const serviceNav = document.getElementById('serviceNav');
+    if (!serviceNav) return;
+    const navOffsetTop = serviceNav.offsetTop;
+
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset >= navOffsetTop - 80) {
+        serviceNav.classList.add('sticky', 'top-[72px]', 'z-30');
+      } else {
+        serviceNav.classList.remove('sticky', 'top-[72px]', 'z-30');
+      }
+    });
+
+    // Highlight active pill based on scroll position
+    const sections = ['mechanical', 'electrical', 'controls', 'architecture', 'bim', 'equipment'];
+    const pills = serviceNav.querySelectorAll('a');
+
+    window.addEventListener('scroll', function() {
+      let current = '';
+      sections.forEach(function(id) {
+        const section = document.getElementById(id);
+        if (section) {
+          const sectionTop = section.offsetTop - 150;
+          if (window.pageYOffset >= sectionTop) {
+            current = id;
+          }
+        }
+      });
+
+      pills.forEach(function(pill) {
+        pill.classList.remove('bg-cyan-500', 'text-white');
+        pill.classList.add('bg-gray-100', 'text-gray-700');
+        if (pill.getAttribute('href') === '#' + current) {
+          pill.classList.remove('bg-gray-100', 'text-gray-700');
+          pill.classList.add('bg-cyan-500', 'text-white');
+        }
+      });
+    });
+  })();
 </script>
 
 <!-- Cookie Banner -->
@@ -301,38 +551,108 @@
   <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
     <div class="w-full min-w-0 break-words">
       <h3 class="text-lg font-semibold mb-2">We use cookies</h3>
-      <p class="text-sm text-gray-700">We use cookies to enhance your experience, analyze site traffic, and serve targeted advertisements. Learn more in our <a href="privacy.html" class="text-blue-600 underline">Privacy Notice</a>.</p>
+      <p class="text-sm text-gray-700">
+        We use cookies to enhance your experience, analyze site traffic, and serve targeted advertisements.
+        Learn more in our <a href="privacy.html" class="text-cyan-600 underline">Privacy Notice</a>.
+      </p>
     </div>
     <div class="flex gap-3 flex-nowrap flex-shrink-0">
       <button onclick="showCustomize()" class="px-4 py-2 text-sm font-medium text-gray-700 border border-gray-300 rounded hover:bg-gray-100">Customize</button>
-      <button onclick="acceptCookies()" class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded hover:bg-blue-700">Accept All</button>
+      <button onclick="acceptCookies()" class="px-4 py-2 text-sm font-medium text-white bg-cyan-500 rounded hover:bg-cyan-600">Accept All</button>
       <button onclick="rejectCookies()" class="px-4 py-2 text-sm font-medium text-gray-700 border border-gray-300 rounded hover:bg-gray-100">Reject All</button>
     </div>
   </div>
 </div>
+
+<!-- Customize Cookie Modal -->
 <div id="cookie-customize-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-[99999] flex items-center justify-center p-6">
   <div class="bg-white rounded-lg shadow-xl max-w-2xl w-full p-6 overflow-y-auto max-h-[90vh]">
     <h3 class="text-2xl font-bold mb-4">Customize Cookie Preferences</h3>
     <form id="cookie-preferences-form" class="space-y-4">
-      <div><label class="flex items-center gap-3"><input type="checkbox" disabled checked class="accent-blue-600" /><span><strong>Essential</strong> &ndash; Always active for site functionality.</span></label></div>
-      <div><label class="flex items-center gap-3"><input type="checkbox" id="performance" class="accent-blue-600" /><span><strong>Performance</strong> &ndash; Helps us understand site usage via analytics.</span></label></div>
-      <div><label class="flex items-center gap-3"><input type="checkbox" id="functional" class="accent-blue-600" /><span><strong>Functional</strong> &ndash; Enables features like videos, maps, and chat.</span></label></div>
-      <div><label class="flex items-center gap-3"><input type="checkbox" id="marketing" class="accent-blue-600" /><span><strong>Marketing</strong> &ndash; For personalized ads and remarketing.</span></label></div>
-      <div><label class="flex items-center gap-3"><input type="checkbox" id="preferences" class="accent-blue-600" /><span><strong>Preferences</strong> &ndash; Saves your language, region, and theme.</span></label></div>
+      <div>
+        <label class="flex items-center gap-3">
+          <input type="checkbox" disabled checked class="accent-cyan-500" />
+          <span><strong>Essential</strong> &ndash; Always active for site functionality.</span>
+        </label>
+      </div>
+      <div>
+        <label class="flex items-center gap-3">
+          <input type="checkbox" id="performance" class="accent-cyan-500" />
+          <span><strong>Performance</strong> &ndash; Helps us understand site usage via analytics.</span>
+        </label>
+      </div>
+      <div>
+        <label class="flex items-center gap-3">
+          <input type="checkbox" id="functional" class="accent-cyan-500" />
+          <span><strong>Functional</strong> &ndash; Enables features like videos, maps, and chat.</span>
+        </label>
+      </div>
+      <div>
+        <label class="flex items-center gap-3">
+          <input type="checkbox" id="marketing" class="accent-cyan-500" />
+          <span><strong>Marketing</strong> &ndash; For personalized ads and remarketing.</span>
+        </label>
+      </div>
+      <div>
+        <label class="flex items-center gap-3">
+          <input type="checkbox" id="preferences" class="accent-cyan-500" />
+          <span><strong>Preferences</strong> &ndash; Saves your language, region, and theme.</span>
+        </label>
+      </div>
       <div class="flex justify-end mt-6 gap-3">
         <button type="button" onclick="hideCustomize()" class="px-4 py-2 text-sm border rounded text-gray-700 hover:bg-gray-100">Cancel</button>
-        <button type="submit" class="px-4 py-2 text-sm bg-blue-600 text-white rounded hover:bg-blue-700">Save Preferences</button>
+        <button type="submit" class="px-4 py-2 text-sm bg-cyan-500 text-white rounded hover:bg-cyan-600">Save Preferences</button>
       </div>
     </form>
   </div>
 </div>
+
 <script>
-  window.addEventListener("DOMContentLoaded", () => { const consent = localStorage.getItem("cookie-consent"); if (consent) document.getElementById("cookie-banner").remove(); });
-  function acceptCookies() { localStorage.setItem("cookie-consent", JSON.stringify({ essential:true, performance:true, functional:true, marketing:true, preferences:true })); document.getElementById("cookie-banner").remove(); location.reload(); }
-  function rejectCookies() { localStorage.setItem("cookie-consent", JSON.stringify({ essential:true, performance:false, functional:false, marketing:false, preferences:false })); document.getElementById("cookie-banner").remove(); location.reload(); }
-  function showCustomize() { document.getElementById("cookie-customize-modal").classList.remove("hidden"); }
-  function hideCustomize() { document.getElementById("cookie-customize-modal").classList.add("hidden"); }
-  document.getElementById("cookie-preferences-form").addEventListener("submit", function(e) { e.preventDefault(); const consent = { essential:true, performance:document.getElementById("performance").checked, functional:document.getElementById("functional").checked, marketing:document.getElementById("marketing").checked, preferences:document.getElementById("preferences").checked }; localStorage.setItem("cookie-consent", JSON.stringify(consent)); document.getElementById("cookie-banner").remove(); document.getElementById("cookie-customize-modal").classList.add("hidden"); location.reload(); });
+  window.addEventListener("DOMContentLoaded", () => {
+    const consent = localStorage.getItem("cookie-consent");
+    if (consent) {
+      document.getElementById("cookie-banner").remove();
+    }
+  });
+
+  function acceptCookies() {
+    localStorage.setItem("cookie-consent", JSON.stringify({
+      essential: true, performance: true, functional: true, marketing: true, preferences: true
+    }));
+    document.getElementById("cookie-banner").remove();
+    location.reload();
+  }
+
+  function rejectCookies() {
+    localStorage.setItem("cookie-consent", JSON.stringify({
+      essential: true, performance: false, functional: false, marketing: false, preferences: false
+    }));
+    document.getElementById("cookie-banner").remove();
+    location.reload();
+  }
+
+  function showCustomize() {
+    document.getElementById("cookie-customize-modal").classList.remove("hidden");
+  }
+
+  function hideCustomize() {
+    document.getElementById("cookie-customize-modal").classList.add("hidden");
+  }
+
+  document.getElementById("cookie-preferences-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const consent = {
+      essential: true,
+      performance: document.getElementById("performance").checked,
+      functional: document.getElementById("functional").checked,
+      marketing: document.getElementById("marketing").checked,
+      preferences: document.getElementById("preferences").checked
+    };
+    localStorage.setItem("cookie-consent", JSON.stringify(consent));
+    document.getElementById("cookie-banner").remove();
+    document.getElementById("cookie-customize-modal").classList.add("hidden");
+    location.reload();
+  });
 </script>
 
 </body>
